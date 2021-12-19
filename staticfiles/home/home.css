@@ -1,0 +1,38 @@
+﻿body{
+	font-family:'Exo 2';
+    background-image: url(ffon2.png);
+    background-color:#302B3D;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.obl{
+	height: 93vh;
+}
+.hh1{
+
+	font-size:70px;
+	margin-top:22%;
+
+}
+.f{
+	background-color:#3E374F;
+}
+b{
+	color:#CC66FF;
+}
+a{
+	text-decoration:none;
+	color:#CC66FF;
+}
+a:hover{
+	color:#CC00CC;
+}
+@media (max-width: 900px){
+	.obl{
+		height:auto;
+		padding-bottom:40px;
+	}
+	.hh{
+	margin-top:10px;
+}
+}
