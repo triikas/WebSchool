@@ -1,0 +1,70 @@
+{% extends 'lessons/htmlOb/sha-les.html' %}
+{% load static %}
+{% block title %}
+	WebSchool: Фон и цвета
+{% endblock %}
+
+{% block body1 %}
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost io" onclick="window.location.href = '../№1/';">#1</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost io" onclick="window.location.href = '../№2/';">#2</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk io">#3</div>
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№4/';">#4</div>-->
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>-->
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>-->
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>-->
+{% endblock %}
+
+{% block body2 %}
+<h1 class="h1 text-light">Фон и цвета</h1>
+<h2 class="h2 text-light">Цвета в CSS</h2>
+<p class="text-light">В языке CSS, указать цвет можно тремя способами:</p>
+<ul class="text-light">
+	<li class="mb-1">С помощью имени цвета. Например <b>red</b> сделает элемент красным, а <b>teal</b> —  изумрудным. Единственное, что требуется —  это знание английского или владение переводчиком.</li>
+	<li class="mb-1">С помощью десятичной системы счисления в RGB-формате. Как вы вероятно знаете, любой цвет можно получить, смешав всего три: красный, зелёный и синий. Именно это принцип и используется. Цвет указывается в формате <b>rgb(x, x, x)</b>, где x —  число от 0 до 255, показывающее яркость одного из цветов от максимальной. Например красный будет выглядеть как <b>rgb(255, 0, 0)</b>.</li>
+	<li>С помощью шестнадцатеричной системы счисления в RGB-формате. Это вариант — самый используемый. Знание шестнадцатеричной системы в данном случае не нужно, вам помогут инструменты вроде пипетки, так что не пугайтесь. Цвет указывается в формате <b>#ff0000</b> (это красный).</li>
+</ul>
+<h2 class="h2 text-light">Фон в CSS</h2>
+<h1 class="text-light fu"><b>background-color</b></h1>
+<p class="text-light">Определяет цвет фона элемента. Значение <b>transparent</b> делает фон прозрачным.</p>
+<h1 class="text-light fu"><b>background-image</b></h1>
+<p class="text-light">Устанавливает фоновое изображение для элемента.</p>
+<h1 class="text-light fu"><b>background-repeat</b></h1>
+<p class="text-light">Определяет, как будет повторяться фоновое изображение, установленное предыдущим свойством.</p>
+<p class="text-light">Значения:</p>
+<ul class="text-light">
+	<li class="mb-1"><b>no-repeat</b> — Изображение не повторяется.</li>
+	<li class="mb-1"><b>repeat</b> — Изображение повторяется по вертикали и горизонтали.</li>
+	<li class="mb-1"><b>repeat-x</b> — Изображение повторяется только по горизонтали.</li>
+	<li class="mb-1"><b>repeat-y</b> — Изображение повторяется только по вертикали.</li>
+	<li class="mb-1"><b>space</b> — Изображение повторяется столько, сколько нужно для заполнения пространства.</li>
+	<li><b>round</b> — Изображение повторяется,заполняя пространство так, чтобы поместилось целое количество штук (при необходимости размер масштабируется автоматически).</li>
+</ul>
+<h1 class="text-light fu"><b>background-position</b></h1>
+<p class="text-light">Задаёт начальное положение фонового изображения. Свойство имеет два значения: по горизонтали (left, center, right) и по вертикали (top, center, bottom). Также значения можно задавать процентами и любыми другими единицами.</p>
+<h1 class="text-light fu"><b>background-size</b></h1>
+<p class="text-light">Масштабирует фоновое изображение согласно заданным параметрам. (два значения)</p>
+<p class="text-light">Варианты значений:</p>
+<ul class="text-light">
+	<li class="mb-1">Любые единицы.</li>
+	<li class="mb-1"><b>auto</b> — Значение по умолчанию. Если, допустим, указана ширина, но не указана высота, то изображение отмасштабируется пропорционально ширине.</li>
+	<li><b>cover</b> — Масштабирует изображение с сохранением пропорций так, чтобы высота или ширина равнялась ширине или высоте блока.</li>
+</ul>
+<h1 class="text-light fu"><b>linear-gradient()</b></h1>
+<p class="text-light">Добавляет линейный градиент к фону элемента. Выступает значением свойства <b>background</b>. Имеет 3+ параметра: угол, цвет или несколько цветов, направление (пишется в виде to left / to right bottom).</p>
+<h1 class="text-light fu"><b>radial-gradient()</b></h1>
+<p class="text-light">Добавляет радиальный градиент к фону элемента. Выступает значением свойства <b>background</b>. Имеет 4+ параметра: форма (circle/ellipse), радиус, направление, цвет/цвета, размер:</p>
+<ul class="text-light">
+	<li class="mb-1"><b>closset-side</b> — Градиент совпадает с ближайшей стороной блока.</li>
+	<li class="mb-1"><b>closset-corner</b> — Форма градиента вычисляется в зависимости от расстояния до ближайшего угла блока.</li>
+	<li class="mb-1"><b>farthest-side</b> — Как первый, но градиент распространяется до дальней стороны блока.</li>
+	<li><b>farthest-corner</b> — Форма градиента вычисляется в зависимости от расстояния до дальнего угла блока.</li>
+</ul>
+<p class="text-light">Перед значением свойства <b>background</b> можно добавить <b>repeating-</b>, тогда цвета будут зациклены.</p>
+<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/12.png' %}">
+<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/11.png' %}">
+<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/10.png' %}">
+<p></p>
+<!--<button onclick="window.location.href = '../№4/';" class="btn no mb-3 px-4" role="button">Дальше</button>-->
+<button onclick="window.location.href = '../';" class="btn no mb-3 px-4" role="button">Завершить</button>
+
+{% endblock %}

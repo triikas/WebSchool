@@ -1,0 +1,95 @@
+{% extends 'lessons/htmlOb/sha-les.html' %}
+{% load static %}
+{% block title %}
+	WebSchool: Адресация в HTML
+{% endblock %}
+{% block body1 %}
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№1/';">#1</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№2/';">#2</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk">#3</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№4/';">#4</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№8/';">#8</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№9/';">#9</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№10/';">#10</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№11/';">#11</div>
+
+{% endblock %}
+{% block body2 %}
+	<h1 class="h1 text-light">Адресация в HTML</h1>
+	<p class="text-light">Основа основ интернета возможность быстро перемещаться от одного документа к другому. Мы кликаем на ссылку и вот перед нами уже совсем другая страница. Для размещения картинки или видеоролика на странице нужно указать ссылку на нужный медиа-файл, чтобы подключить таблицы стилей — ссылку на сss-файл.</p>
+	<p class="text-light">Что бы все ссылки работали правильно нужно правильно указать адрес документа (URL). Существует два типа адресации:</p>
+	<ul class="text-light">
+		<li>Абсолютная.</li>
+		<li>Относительная.</li>
+	</ul>
+	<h2 class="h2 text-light">Абсолютный адрес</h2>
+	<p class="text-light">Абсолютная адресация применяется в случае, когда нужно сослаться на файл, расположенный на другом сайте. Нужно указать полный адрес документа, включая протокол доступа (как правило, <b>https://</b>), название сайта (доменное имя) и путь к файлу на сайте.</p>
+	<p class="text-light">Правильно</p>
+	<ul class="text-light">
+		<li><b>https://www.fft.ru/ОpenPage/point 1/</b></li>
+		<li><b>https://w3c.org</b></li>
+	</ul>
+	<p class="text-light">Неправильно</p>
+	<ul class="text-light">
+		<li><b>www.fft.ru/ОpenPage/point 1/</b> — не указан протокол доступа</li>
+		<li><b>https://ОpenPage/point 1/</b> — не указано название сайта</li>
+	</ul>
+	<p class="text-light">Для задания абсолютного адреса необходимо, чтобы файлы сайта были опубликованы в интернете.</p>
+	<h2 class="h2 text-light">Корневая папка сайта</h2>
+	<p class="text-light"><b>Корневая папка сайта</b> — это главная или основная папка. В ней находятся файлы, обеспечивающие работоспособность сайта. Корневая папка сайта может быть единственной, когда сайт имеет простую структуру, но чаще она содержит другие вложенные папки и файлы.</p>
+	<p class="text-light">Корневая папка отличается от вложенных в нее папок тем, что именно в ней лежит html-файл главной страницы сайта.</p>
+	<p class="text-light">Файлу главной страницы сайта присваивают либо имя <b>index</b> (чаще всего), либо <b>default</b> (реже). </p>
+	<p class="text-light">На самом деле, никто вас не заставляет структурировать сайт именно таким образом. Это просто общепринятая версия.</p>
+	<h2 class="h2 text-light">Относительный адрес</h2>
+	<p class="text-light"><b>Относительная адресация</b> применяется в случае, когда нужно сослаться с одного файла сайта на другой файл этого же сайта. Этот тип адресации используется намного чаще. </p>
+	<p class="text-light">Рассмотрим примеры построения относительных URL для корневой папки сайта следующего вида:</p>
+	<img class="img-fluid w-75 my-2" src="{% static 'lessons/1/shema1.png' %}">
+	<p class="text-light">Примеры адресов:</p>
+	<table class="table text-light">
+		<tr class="border-top py-2">
+			<td>1.</td>
+			<td>   Сделать ссылку со страницы index.html из корневой папки на страницу history.html</td>
+			<td>   history.html</td>
+		</tr>
+		<tr class="border-top py-2">
+			<td>2.</td>
+			<td>   Сделать ссылку со страницы index.html из корневой папки на страницу index.html в папке contacts</td>
+			<td>   contacts/index.html</td>
+		</tr>
+		<tr class="border-top py-2">
+			<td>3.</td>
+			<td>   Сделать ссылку со страницы index.html из корневой папки на страницу index.html в папке vacancy</td>
+			<td>   about/vacancy/index.html</td>
+		</tr>
+		<tr class="border-top py-2">
+			<td>4.</td>
+			<td>   Сделать ссылку со страницы index.html из корневой папки на страницу index.html в папке director</td>
+			<td>   about/structure/director/index.html</td>
+		</tr>
+		<tr class="border-top py-2">
+			<td>5.</td>
+			<td>   Сделать ссылку со страницы index.html папке about на страницу index.html корневой папки</td>
+			<td>   ../index.html</td>
+		</tr>
+		<tr class="border-top py-2">
+			<td>6.</td>
+			<td>   Сделать ссылку со страницы index.html в папке structure на страницу history.html</td>
+			<td>   ../../history.html</td>
+		</tr>
+		<tr class="border-top py-2">
+			<td>7.</td>
+			<td>   На страницy index.html в папке management вставить картинку logo.jpg</td>
+			<td>   ../../../img/logo.jpg</td>
+		</tr>
+		<tr class="border-top py-2">
+			<td>8.</td>
+			<td>   К странице іndex.html в папке vacancy прилинковать файл стилей рrint.css</td>
+			<td>   ../../css/print.css</td>
+		</tr>
+	</table>
+	<button onclick="window.location.href = '../№4/';" class="btn no mb-3 px-4" role="button">Дальше</button>
+
+{% endblock %}

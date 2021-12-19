@@ -1,0 +1,87 @@
+﻿body{
+	font-family:'Exo 2';
+    background-color:#302B3D;
+}
+.jjk{
+	background-color:#E9E9EA;
+	color:#302B3D;
+}
+.kol{
+	background-color:aliceblue;
+	height:99%;
+	width:1px;
+	float:left;
+	margin-left:10px;
+}
+.nach{
+	height:85vh;
+	padding-top:20%;
+	display:block;
+}
+.konch{
+	height:75vh;
+	padding-top:20%;
+	display:none;
+
+}
+.igm{
+	border:3px #8E377E solid;
+	border-radius:3px;
+}
+.no{
+	background-color:#8E377E;
+}
+.jjk-ost{
+	cursor:pointer;
+}
+.obl{
+	height:90hv;
+}
+.jjk-ost:hover{
+	background-color:#8E377E;
+	color:black;
+}
+b{
+	color:#CC66FF;
+}
+.fu{
+	font-size:50px;
+}
+@media (max-width: 750px){
+	.jjk{
+	width:9%;
+	float:left;
+	padding:0;
+}
+	.jjk-ost{
+	width:9%;
+	float:left;
+	padding:0;
+}
+	.io{
+	width:33%;
+}
+	.kol{
+	height:1px;
+	width:100%;
+	margin:10px 0 10px 0;
+
+}
+	.kkk{
+	padding:0;
+}
+	.mmm{
+	
+	display:flex;
+  	justify-content:space-between;
+ 
+}
+
+}
+.panda{
+	background-color:#4F4664;
+}
+.otto{
+	height:85vh;
+	display:none;
+}

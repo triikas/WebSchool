@@ -1,0 +1,88 @@
+{% extends 'lessons/htmlOb/sha-les.html' %}
+{% load static %}
+{% block title %}
+	WebSchool: Полезные теги
+{% endblock %}
+{% block body1 %}
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№1/';">#1</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№2/';">#2</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№3/';">#3</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№4/';">#4</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№8/';">#8</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№9/';">#9</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№10/';">#10</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk">#11</div>
+
+{% endblock %}
+{% block body2 %}
+	<h1 class="h1 text-light">Полезные теги форматирования текста</h1>
+	<h2 class="h2 text-light">Перенос строк</h2>
+	<h1 class="fu text-light"><b>br</b></h1>
+	<p class=" text-light">Тег <b>br</b> cоздает принудительный перенос текста в абзаце на новую строку.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p32.png' %}">
+	<h1 class="fu text-light"><b>wbr</b></h1>
+	<p class=" text-light">Элемент <b>wbr</b> указывает браузеру место, где допускается делать перенос строки в тексте, eсли этого требует ширина родительского злемента.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p33.png' %}">
+	<p class=" text-light">Браузеры при переносе текста не добавляет символ дефиса, но его можно имитировать, заменив <b>wbr</b> на символ мягкого переноса.</p>
+	<h2 class="h2 text-light">Аббревиатуры и акронимы</h2>
+	<h1 class="fu text-light"><b>abbr</b></h1>
+	<p class=" text-light">Для аббревиатур и акронимов в тексте используется тег <b>аbbr</b>. Текст внутри тега <b>аbbr</b> никак на странице не выделяется. Для расшифровки аббревиатуры или акронима используется атрибут <b>title</b>.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p34.png' %}">
+	<h2 class="h2 text-light">Программный код</h2>
+	<h1 class="fu text-light"><b>code</b></h1>
+	<p class=" text-light">Элемент <b>сode</b> предназначен для отображения однострочного программного кода.</p>
+	<h1 class="fu text-light"><b>samp</b></h1>
+	<p class=" text-light">Элемент <b>samp</b> используется для отображения текста, который является результатом вывода компьютерной программы или скрипта.</p>
+	<h1 class="fu text-light"><b>var</b></h1>
+	<p class=" text-light">Элемент <b>var</b> используется для выделения переменных из компьютерных программ.</p>
+	<h1 class="fu text-light"><b>pre</b></h1>
+	<p class=" text-light">Элемент <b>рre</b> определяет блок предформатированного текста. Такой текст отображается обычно моноширинным шрифтом и со всеми пробелами между словами и со всеми переносами строк, заданными нажатием клавиши Еnter в коде страницы.</p>
+	<h2 class="h2 text-light">Корректировка информации</h2>
+	<h1 class="fu text-light"><b>ins, del</b></h1>
+	<p class=" text-light">Теги <b>ins</b> и <b>del</b> служат для представления изменений в документе. Тегом <b>ins</b> обозначает информацию, которая была добавлена в документ. Браузеры текст в теге <b>ins</b> отображают подчеркнутым. Тегом <b>del</b> обозначает информацию, которая была удалена из документа. Браузеры текст в теге <b>del</b> отображают зачеркнутым. </p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p35.png' %}">
+	<h1 class="fu text-light"><b>dfn</b></h1>
+	<p class=" text-light">Элемент <b>dfn</b> применяется для выделения новых терминов при их первом появлении в тексте.</p>
+	<p class=" text-light">Определение термина задаётся с помощью атрибута <b>title</b> y элемента <b>dfn</b>, либо с помощью атрибута <b>title</b> вложенного элемента <b>аbbr</b>, либо текстом внутри <b>dfn</b>.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p36.png' %}">
+	<h1 class="fu text-light"><b>s</b></h1>
+	<p class=" text-light">Тег <b>s</b> используется для того, чтобы отметить в тексте старую и более неактуальную информацию.</p>
+	<p class=" text-light">Текст в теге <b>s</b> браузером отображается как зачеркнутый. </p>
+	<p class=" text-light">Рекомендуется использовать <b>ins</b> и <b>del</b> для правок опубликованного документа:</p>
+	<ul class=" text-light">
+		<li>отображение изменений в официальных документах</li>
+		<li>указание изменений в статье</li>
+		<li>отображение отличия между двумя версиями документа</li>
+		<li>указание важного дополнения или удаления содержимого, о которых необходимо знать</li>
+	</ul>
+	<p class=" text-light">Тег <b>s</b> необходимо использовать тогда, когда требуется выделить информацию, которая больше не является истинной или актуальной, но удаление которой является нежелательным.</p>
+	<h2 class="h2 text-light">Время и дата</h2>
+	<h1 class="fu text-light"><b>time</b></h1>
+	<p class=" text-light">Помечает текст внутри элемента  как дату и/или время.</p>
+	<p class=" text-light">Дата и/или время указываются внутри контейнера <b>time</b>, либо задаются через атрибут <b>datetime</b>.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p37.png' %}">
+	<h2 class="h2 text-light">Дополнительная информация</h2>
+	<h1 class="fu text-light"><b>details, summary</b></h1>
+	<p class=" text-light">Элемент <b>details</b> используется для хранения информации, которую можно скрыть или показать по требованию пользователя. По умолчанию содержимое элемента не отображается, для изменения статуса применяется атрибут <b>ореn</b>.</p>
+	<p class=" text-light">Элемент <b>summary</b> указывает заголовок для <b>details</b>, По которому можно щёлкать для разворачивания/сворачивания информаци. Элемент summary Должен идти первым внутри <b>details</b></p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p38.png' %}">
+	<h2 class="h2 text-light">Выделение текста</h2>
+	<h1 class="fu text-light"><b>strong</b></h1>
+	<p class=" text-light">Элемент <b>strong</b> предназначен для выделения важного текста.</p>
+	<p class=" text-light">Элементы <b>b</b> и <b>strong</b>, несмотря на сходный результат, не эквивалентны:</p>
+	<p class=" text-light"><b>b</b> — устанавливает полужирное начертание текста.</p>
+	<p class=" text-light"><b>strong</b> — определяет важность помеченного текста.</p>
+	<h1 class="fu text-light"><b>em</b></h1>
+	<p class=" text-light">Элемент <b>еm</b> предназначен для акцентирования текста.</p>
+	<p class=" text-light">И опять же элементы <b>i</b> и <b>еm</b> (как <b>b</b> и <b>strong</b>) не являются эквивалентными:</p>
+	<p class=" text-light"><b>i</b> — устанавливает курсивное начертание текста.</p>
+	<p class=" text-light"><b>em</b> — используется для акцентирования помеченного текста.</p>
+	<h1 class="fu text-light"><b>small</b></h1>
+	<p class=" text-light">Тег <b>small</b> уменьшает размер шрифта на единицу.</p>
+	<p class=" text-light">В НTML pазмер шрифта измеряется в условных единицах: от 1 до 7. Средний размер текста, используемый по умолчанию, принят за 3. Тег <b>small</b> уменьшает текст на одну условную единицу.</p>
+	<button onclick="window.location.href = '../';" class="btn no mb-3 px-4" role="button">Завершить</button>
+
+{% endblock %}

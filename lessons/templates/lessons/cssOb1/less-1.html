@@ -1,0 +1,60 @@
+{% extends 'lessons/htmlOb/sha-les.html' %}
+{% load static %}
+{% block title %}
+	WebSchool: Куда писать стили
+{% endblock %}
+
+{% block body1 %}
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk io">#1</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost io" onclick="window.location.href = '../№2/';">#2</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost io" onclick="window.location.href = '../№3/';">#3</div>
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№4/';">#4</div>-->
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>-->
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>-->
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>-->
+{% endblock %}
+
+{% block body2 %}
+	<h1 class="h1 text-light">Куда писать стили</h1>
+	<h1 class="text-light fu"><b>link, href, rel</b></h1>
+	<p class="text-light">Устанавливает связь с внешним документом вроде файла со стилями или со шрифтами. Элемент <b>link</b> обычно размещается внутри контейнера <b>head</b></p>
+	<p class="text-light">Тег одиночный и имеет два атрибута: <b>href</b> и <b>rel</b>. Первый указывает путь к файлу, а второй определяет отношения между документом и файлом. Значение для ссылок на css-файл: stylesheet.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/1.png' %}">
+	<p class="text-light">Для html-страницы можно использовать несколько таблиц стилей. Таблицу соответственно можно использовать в нескольких html-файлах, чем она и отличается от тега <b>style</b></p>
+	<h1 class="text-light fu"><b>style</b></h1>
+	<p class="text-light">Этот тег пишется внутри head. Внутри него можно писать стили, которые будут пременены только для текущего документа.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/2.png' %}">
+	<h2 class="h2 text-light">Селекторы</h2>
+	<p class="text-light">Запись стиля состоит из двух частей: элемента веб-страницы — селектора, и команды форматирования — блока объявления.</p>
+	<p class="text-light">Селектор сообщает браузеры какой элемент форматировать, а в блоке объявления перечисляются форматирующие команды из двух частей: свойство и значение.</p>
+	<p class="text-light">Для одного селектора можно задать несколько свойств через точку с запятой. </p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/3.png' %}">
+	<h3 class="h3 text-light">Универсальный селектор</h3>
+	<p class="text-light">Применяется сразу ко всем элементам.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/4.png' %}">
+	<h3 class="h3 text-light">Селектор тега</h3>
+	<p class="text-light">В качестве селектора указывается название тега без скобок.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/55.png' %}">
+	<h3 class="h3 text-light">Селектор класса</h3>
+	<p class="text-light">В качестве селектора указывается название класса с точкой перед. Это позволит применить стиль ко всем элементам с таким классом. Также селектор можно задать для конкретных элементов с таким классом.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/6.png' %}">
+	<h3 class="h3 text-light">Селектор ID</h3>
+	<p class="text-light">Также как с классами, но через #.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/7.png' %}">
+	<h3 class="h3 text-light">Дочерний cелектор</h3>
+	<p class="text-light">Свойство применяется к определённым элементам внутри определённого элемента.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/8.png' %}">
+	<h3 class="h3 text-light">Селектор соседа</h3>
+	<p class="text-light">Свойство применяется к определённому элементу, стоящему после определённого элемента.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/9.png' %}">
+	<h3 class="h3 text-light">Селектор соседей</h3>
+	<p class="text-light">Также, но через ~. Распростроняется на все элементы указанного вида после.</p>
+	<h2 class="h2 text-light">Каскадность</h2>
+	<p class="text-light">Стили для элемента могут быть определены в нескольких местах: внутри одного файла стилей и в разных файлах стилей.</p>
+	<p class="text-light">Браузер находит все CSS-правила, затрагивающие данный элемент, а затем комбинирует их и получает итоговый список свойств для этого элемента. Комбинирование свойств производится по четким правилам, которые опираются на приоритетность и специфичность.</p>
+	<p class="text-light">Название “Каскадность” появилось из-за описанного механизма комбинирования стилей из разных css-правил.</p>
+
+	<button onclick="window.location.href = '../№2/';" class="btn no mb-3 px-4" role="button">Дальше</button>
+
+
+{% endblock %}

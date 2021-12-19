@@ -1,0 +1,35 @@
+{% extends 'lessons/htmlOb/sha-les.html' %}
+{% load static %}
+{% block title %}
+	WebSchool: Изображения
+{% endblock %}
+{% block body1 %}
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№1/';">#1</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№2/';">#2</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№3/';">#3</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№4/';">#4</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№8/';">#8</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk">#9</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№10/';">#10</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№11/';">#11</div>
+
+{% endblock %}
+{% block body2 %}
+	<h1 class="h1 text-light">Изображения</h1>
+	<h1 class="fu text-light"><b>picture</b></h1>
+	<p class=" text-light">Контейнер для хранения нескольких элементов <b>source</b>, которые поддерживают элемент <b>img</b>. Этот элемент позволяет указывать разные изображения с учётом размера экрана, диоганалей, формата изображения и других параметров. Вот несколько областей применения <b>picture</b>:</p>
+	<ul class=" text-light">
+		<li>выводить рисунки разного размера для мобильных и настольных устройств;</li>
+		<li>отображать изображения разных пропорций, учитывающих ориентацию устройства;</li>
+		<li>выводить изображение в векторном формате SVG, a для браузеров, его не поддерживающих, показывать РNG.</li>
+	</ul>
+	<p class=" text-light">Внутри <b>рicture</b> cодержится ноль или несколько элементов <b>source</b>, которые идут перед одним элементом <b>img</b>.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p29.png' %}">
+	<div class="mt-2"></div>
+	<button onclick="window.location.href = '../№10/';" class="btn no mb-3 px-4" role="button">Дальше</button>
+
+
+{% endblock %}

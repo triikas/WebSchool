@@ -1,0 +1,62 @@
+{% extends 'lessons/htmlOb/sha-les.html' %}
+{% load static %}
+{% block title %}
+	WebSchool: Изображения и ссылки
+{% endblock %}
+{% block body1 %}
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№1/';">#1</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№2/';">#2</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№3/';">#3</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№4/';">#4</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk">#5</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№8/';">#8</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№9/';">#9</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№10/';">#10</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№11/';">#11</div>
+
+{% endblock %}
+{% block body2 %}
+	<h1 class="h1 text-light">Изображения и ссылки</h1>
+	<h2 class="h2 text-light">Графические форматы</h2>
+	<p class="text-light"><b>Растровая графика</b> — изображение хранится в виде маленьких точек пикселей. Качество такой картинки ограничивается двумя факторами: размером картинки в пикселях (на экране) и разрешением изображения (её фактическим размером в пикселях).</p>
+	<p class="text-light"><b>Векторная графика</b> — изображение хранится в виде массива чисел, описывающих построение изображения в виде кривых и ключевых точек-вершин.</p>
+	<p class="text-light">Форматы растровой графики: <b>jрeg</b>, <b>gif</b>, <b>рng</b> и др. Форматы векторной графики: <b>svg</b>, <b>swf</b> и др.</p>
+	<h2 class="h2 text-light">Тег <b>img</b> и его атрибуты</h2>
+	<h1 class="fu text-light"><b>img, src, alt</b></h1>
+	<p class="text-light">Тег <b>img</b> и один из его обязательных атрибутов <b>src</b> используются для размещения изображения на странице. В атрибуте <b>src</b> yказывается URL изображения.</p>
+	<p class="text-light">Альтернативный текст (<b>аlt</b>) позволяет получить текстовую информацию о рисунке при отключенном в браузере показе картинок, во время их загрузки или для речевых браузеров.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p5.png' %}">
+	<h1 class="fu text-light"><b>width, height</b></h1>
+	<p class="text-light">Для указания размеров рисунка у тега <b>img</b> предусмотрены атрибуты <b>width</b> (ширина) и <b>height</b> (высота). В качестве значения используются пиксели, при этом аргументы должны совпадать с физическими размерами картинки.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p6.png' %}">
+	<h2 class="h2 text-light">Группировка изображений и подписей</h2>
+	<h1 class="fu text-light"><b>figure, figcaption</b></h1>
+	<p class="text-light">Тег <b>figure</b> используется для группирования любых элементов, например, изображений и подписей к ним. Как правило используется для иллюстраций, фрагментов кода, схем, графиком, диаграмм и т.п. </p>
+	<p class="text-light">Тег <b>figcaption</b> cодержит описание для элемента <b>figure</b>.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p7.png' %}">
+	<h2 class="h2 text-light">Тег <b>а</b> и его атрибуты</h2>
+	<h1 class="fu text-light"><b>a, href</b></h1>
+	<p class="text-light">Тег <b>а</b> используют для создания ссылок на странице. Тег <b>а</b> — парный. В качестве содержимого тега <b>а</b> может выступать как текст, так и картинка.</p>
+	<p class="text-light">Без атрибута <b>href</b> coбственно ссылка, создаваемая тегом <b>а</b>, ссылкой являться не будет. В атрибуте <b>href</b> задается URL pесурса на который ведёт ссылка.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p8.png' %}">
+	<h1 class="fu text-light"><b>target</b></h1>
+	<p class="text-light">Атрибут <b>target</b> позволяет указать браузеру как открыть ресурс, на который мы ссылаемся: в новом окне или в текущем:</p>
+	<p class="text-light">Варианты значений:</p>
+	<ul class="text-light">
+		<li><b>_blank</b> — Загружает страницу в новое окно браузера.</li>
+		<li><b>_self</b> — Загружает страницу в текущее окно.</li>
+		<li><b>_parent</b> — Загружает страницу во фрейм-родитель, если фреймов нет, то это значение работает как _self.</li>
+		<li><b>_top</b> — Oтменяет все фреймы и загружает страницу в полном окне браузера, если фреймов нет, то это значение работает как _self.</li>
+	</ul>
+	<p class="text-light">Значение по умолчанию:_self.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p9.png' %}">
+	<h1 class="fu text-light"><b>id</b></h1>
+<p class="text-light">Атрибут <b>id</b> используют для создания якорей в тексте, к которым можно быстро перейти с помощью ссылки на якорь.</p>
+<p class="text-light">Для создания ссылки на якорь следует вначале сделать закладку (якорь) в соответствующем месте и дать ей имя при помощи атрибута <b>id</b> тега а. В качестве значения href для перехода к этому якорю используется имя закладки с символом решетки (#) впереди.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p10.png' %}">
+	<div class="mt-2"></div>
+	<button onclick="window.location.href = '../№6/';" class="btn no mb-3 px-4" role="button">Дальше</button>
+
+{% endblock %}

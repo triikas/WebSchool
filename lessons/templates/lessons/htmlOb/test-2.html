@@ -1,0 +1,85 @@
+{% extends 'lessons/htmlOb/sha-les.html' %}
+{% load static %}
+{% block title %}
+	WebSchool: Тест
+{% endblock %}
+{% block body1 %}
+    <div class="mx-auto mb-3 px-1 py-5 rounded shadow text-light io jjk-ost" onclick="window.location.href = '../test1/';"><img class="img-fluid w-50 d-block mx-auto  my-2" src="{% static 'lessons/1/ST1.png' %}"></div>
+	<div class="mx-auto mb-3 px-1 py-5 rounded shadow jjk io"><img class="img-fluid w-50 d-block mx-auto  my-2" src="{% static 'lessons/1/ST2.png' %}"></div>
+	<div class="mx-auto mb-3 px-1 py-5 rounded shadow io text-light jjk-ost" onclick="window.location.href = '../test3/';"><img class="img-fluid w-50 d-block mx-auto my-2" src="{% static 'lessons/1/ST3.png' %}"></div>
+
+{% endblock %}
+{% block body2 %}
+<div class="nach text-light text-center">
+	<h1 class="h1 mb-3">Не самый простой тест</h1>
+	<button onclick="Start()" class="btn mx-auto btn-success mb-3 px-4" role="button">Начать</button>
+
+</div>
+<style>
+.wrapper
+{
+    display: none;
+    height:85vh;
+}
+.button
+{
+   border: 0;
+   border-radius: 10px;
+   background: #5B406A;
+   color: #fff;
+   padding: 10px 25px;
+   width: 70%;
+   font-size: 15pt;
+   display: block;
+   margin: 2px auto;
+   margin-top: 16px;
+   cursor: pointer;
+}
+<!--.button:hover-->
+<!--{-->
+<!--    background: #8E377E;-->
+<!--}-->
+.button_wrong
+{
+   background: #EB6465;
+}
+
+.button_correct
+{
+   background: #5EB97D;
+}
+
+.button_passive
+{
+   background: #B3B3B3;
+}
+.head__content
+{
+
+    font-size:1.2em;
+}
+</style>
+<div class="wrapper ">
+   <main class="main">
+       <div class="quiz__head text-center panda py-2 mt-5 mx-auto rounded shadow">
+           <p class="head__content text-light mt-3" id="head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ducimus odit accusamus, illum quas magni provident odio praesentium commodi sint, porro harum, minus cupiditate architecto culpa aut ex dolore officia.</p>
+       </div>
+       <div class="quiz__body">
+           <div class="buttons">
+               <div class="buttons__content" id="buttons">
+                   <button class="button text-light my-4 mx-2">Default button</button><br>
+                   <button class="button button_wrong text-light my-4 mx-2">Wrong answer</button><br>
+                   <button class="button button_correct text-light my-4 mx-2">Correct answer</button><br>
+                   <button class="button button_passive text-light my-4 mx-2">Unclicked button</button><br>
+               </div>
+           </div>
+
+           <div class="quiz__footer text-center mt-4">
+               <div class="footer__content text-light" id="pages">0 / 0</div>
+           </div>
+       </div>
+
+   </main>
+</div>
+<script src="{% static 'lessons/test22.js' %}"></script>
+{% endblock %}

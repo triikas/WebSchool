@@ -1,0 +1,39 @@
+﻿.obl{
+	height: 100vh;
+}
+body{
+	font-family:'Exo 2';
+    background-color:#302B3D;
+}
+.hh1{
+
+	font-size:70px;
+
+}
+b{
+	color:#CC66FF;
+}
+.klon{
+	padding-top:40vh;
+}
+.bd1{
+	border:3px #FF4C1E solid;
+	border-radius:3px;
+}
+.jojo{
+	width:80vh;
+}
+.ss{
+	cursor:pointer;
+}
+.ss:hover{
+	background-color:#FF4C1E;
+}
+@media (max-width: 900px){
+	.lop{
+		margin-top:15%;
+	}
+	footer{
+	margin-top:30px;
+}
+}

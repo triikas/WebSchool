@@ -1,0 +1,75 @@
+{% extends 'lessons/htmlOb/sha-les.html' %}
+{% load static %}
+{% block title %}
+	WebSchool: Разметка текста
+{% endblock %}
+
+{% block body1 %}
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№1/';">#1</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk">#2</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№3/';">#3</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№4/';">#4</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№8/';">#8</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№9/';">#9</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№10/';">#10</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№11/';">#11</div>
+
+
+{% endblock %}
+{% block body2 %}
+	<h1 class="h1 text-light">Разметка текста</h1>
+	<h2 class="h2 text-light">Заголовки</h2>
+	<h1 class="text-light fu"><b>h1...h6</b></h1>
+	<p class="text-light">Браузеры отображают содержимое заголовков разного уровня разным размером шрифта в полужирном начертании.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/7.png' %}">
+
+	<h2 class="h2 text-light">Параграф (абзац) текста</h2>
+	<h1 class="text-light fu"><b>p</b></h1>
+	<p class="text-light">Браузер между несколькими следующими друг за другом абзацами оставляет свободное пространство для того, чтобы более явно разбить текст на отдельные блоки для лучшего восприятия.</p>
+
+	<h2 class="h2 text-light">Выделение текста</h2>
+	<ul class="text-light">
+		<li>
+			<h3 class="h3 text-light">Полужирное начертание</h3>
+			<h1 class="text-light fu"><b>b</b></h1>
+			<p class="text-light">Использование тега <b>b</b> приводит к тому, что слова, в него заключенные, выделяются на странице полужирным начертанием шрифта. Таким образом можно выделить какие-то ключевые слова или фразы в тексте для привлечения внимания к ним со стороны пользователя.</p>
+		</li>
+		<li>
+			<h3 class="h3 text-light">Курсивное начертание</h3>
+			<h1 class="text-light fu"><b>i</b></h1>
+			<p class="text-light">Текст, оформленный с помощью тега <b>i</b>, отображается в курсивном начертании. Этот тег используют не для привлечения внимания пользователя, а для выделения в тексте технических и научных терминов.</p>
+		</li>
+		<li>
+			<h3 class="h3 text-light">Маркер</h3>
+			<h1 class="text-light fu"><b>mark</b></h1>
+			<p class="text-light">Выделяет текст. В браузере фоновый цвет текста внутри <b>mark</b> будет жёлтым цветом.</p>
+
+		</li>
+	</ul>
+
+
+	<h2 class="h2 text-light">Горизонтальная линия</h2>
+	<h1 class="text-light fu"><b>hr</b></h1>
+	<p class="text-light">Тег <b>hr</b> добавляет на страницу горизонтальную линию.</p>
+
+
+	<h2 class="h2 text-light">Верхний и нижний индексы</h2>
+	<h1 class="text-light fu"><b>sup</b></h1>
+	<p class="text-light">Текст внутри тега <b>suр</b> отображается на странице как верхний индекс.</p>
+	<h1 class="text-light fu"><b>sub</b></h1>
+	<p class="text-light">Текст внутри тега <b>sub</b> отображается на странице как нижний индекс.</p>
+	<button onclick="window.location.href = '../№3/';" class="btn no mb-3 px-4" role="button">Дальше</button>
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

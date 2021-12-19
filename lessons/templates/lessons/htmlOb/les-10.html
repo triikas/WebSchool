@@ -1,0 +1,133 @@
+{% extends 'lessons/htmlOb/sha-les.html' %}
+{% load static %}
+{% block title %}
+	WebSchool: Аудио и видео
+{% endblock %}
+{% block body1 %}
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№1/';">#1</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№2/';">#2</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№3/';">#3</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№4/';">#4</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№8/';">#8</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№9/';">#9</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk">#10</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№11/';">#11</div>
+
+{% endblock %}
+{% block body2 %}
+	<h1 class="h1 text-light">Аудио и видео</h1>
+	<h2 class="h2 text-light">Аудио на странице</h2>
+	<h1 class="fu text-light"><b>audio, source</b></h1>
+	<p class=" text-light">Добавляет, воспроизводит и управляет настройками аудиозаписи на веб-странице. </p>
+	<p class=" text-light">Адрес аудиофайла указывается либо в атрибуте <b>src</b>, либо через вложенный элемент <b>source</b>.</p>
+	<h2 class="h2 text-light">Атрибуты</h2>
+	<ul class=" text-light">
+		<li><b>autoplay</b> — Звук начинает играть сразу после загрузки страницы.</li>
+		<li><b>controls</b> — Добавляет панель управления к аудиофайлу.</li>
+		<li><b>loop</b> — Повторяет воспроизведение звука с начала после его завершения.</li>
+		<li><b>muted</b> — Oтключает звук при воспроизведении музыки.</li>
+		<li><b>SEC</b> — Указывает путь к воспроизводимому файлу.</li>
+	</ul>
+	<h2 class="h2 text-light">Кодеки и браузеры</h2>
+	<table class="table text-light">
+		<tr>
+			<td>Кодек</td>
+			<td>IE</td>
+			<td>Chrome</td>
+			<td>Opera</td>
+			<td>Safari</td>
+			<td>Firefox</td>
+		</tr>
+		<tr>
+			<td>ogg/vorbis</td>
+			<td>нет</td>
+			<td>3</td>
+			<td>10.50</td>
+			<td>нет</td>
+			<td>3.5</td>
+		</tr>
+		<tr>
+			<td>wav</td>
+			<td>нет</td>
+			<td>3</td>
+			<td>10.60</td>
+			<td>3.1</td>
+			<td>3.5</td>
+		</tr>
+		<tr>
+			<td>mp3</td>
+			<td>9</td>
+			<td>3</td>
+			<td>15</td>
+			<td>3.1</td>
+			<td>22</td>
+		</tr>
+		<tr>
+			<td>AAC</td>
+			<td>9</td>
+			<td>3</td>
+			<td>15</td>
+			<td>3.1</td>
+			<td>22</td>
+		</tr>
+	</table>
+	<p class=" text-light">Для универсального воспроизведения в указанных браузерах аудио кодируют с помощью разных кодеков и добавляют файлы одновременно через элемент <b>source</b>.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p30.png' %}">
+	<h2 class="h2 text-light">Видео на странице</h2>
+	<h1 class="fu text-light"><b>video, source</b></h1>
+	<p class=" text-light">Добавляет, воспроизводит, управляет настройками видеоролика на веб-странице. </p>
+	<p class=" text-light">Адрес видеофайла указывается либо в атрибуте <b>src</b>, либо через вложенный элемент source.</p>
+	<h2 class="h2 text-light">Атрибуты</h2>
+	<ul class=" text-light">
+		<li><b>autoplay</b> — видео начинает воспроизводиться автоматически после загрузки страницы.</li>
+		<li><b>controls</b> — добавляет панель управления к видеоролику.</li>
+		<li><b>height</b> — задаёт высоту области для воспроизведения видеоролика.</li>
+		<li><b>loop</b> — повторяет воспроизведение видео с начала после его завершения. </li>
+		<li><b>poster</b> — указывает адрес картинки, которая будет отображаться, пока видео не доступно или не воспроизводится.</li>
+		<li><b>preload</b> — используется для загрузки видео вместе с загрузкой веб-страницы.</li>
+		<li><b>src</b> — указывает путь к воспроизводимому видеоролику.</li>
+		<li><b>width</b> — задаёт ширину области для воспроизведения видеоролика.</li>
+	</ul>
+	<h2 class="h2 text-light">Кодеки и браузеры</h2>
+	<table class="table text-light">
+		<tr>
+			<td>Браузер</td>
+			<td>IE</td>
+			<td>Chrome</td>
+			<td>Opera</td>
+			<td>Safari</td>
+			<td>Firefox</td>
+		</tr>
+		<tr>
+			<td>ogg/theora</td>
+			<td>нет</td>
+			<td>4</td>
+			<td>11.5</td>
+			<td>нет</td>
+			<td>3.5</td>
+		</tr>
+		<tr>
+			<td>H.264</td>
+			<td>9</td>
+			<td>4</td>
+			<td>25</td>
+			<td>3.2</td>
+			<td>21</td>
+		</tr>
+		<tr>
+			<td>WebM</td>
+			<td>нет</td>
+			<td>6</td>
+			<td>11.5</td>
+			<td>нет</td>
+			<td>4</td>
+		</tr>
+	</table>
+	<p class=" text-light">Для универсального воспроизведения в указанных браузерах видео кодируют с помощью разных кодеков и добавляют файлы одновременно.</p>
+	<button onclick="window.location.href = '../№11/';" class="btn no mb-3 px-4" role="button">Дальше</button>
+
+
+{% endblock %}

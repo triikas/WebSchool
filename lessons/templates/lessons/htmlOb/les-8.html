@@ -1,0 +1,198 @@
+{% extends 'lessons/htmlOb/sha-les.html' %}
+{% load static %}
+{% block title %}
+	WebSchool: Формы
+{% endblock %}
+{% block body1 %}
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№1/';">#1</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№2/';">#2</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№3/';">#3</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№4/';">#4</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk">#8</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№9/';">#9</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№10/';">#10</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№11/';">#11</div>
+
+{% endblock %}
+{% block body2 %}
+	<h1 class="h1 text-light">Формы</h1>
+	<h2 class="h2 text-light">Тег <b>form</b> и его атрибуты</h2>
+	<h1 class="fu text-light"><b>form</b></h1>
+	<p class=" text-light">Тег <b>form</b> используется для создания формы на веб-странице.</p>
+	<p class=" text-light">Документ может содержать любое количество форм, но одновременно на
+	сервер может быть отправлена только одна форма.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p20.png' %}">
+	<h2 class="h2 text-light">Атрибуты тега <b>form</b></h2>
+	<ul class="text-light">
+		<li><b>name</b> — Имя формы.</li>
+		<li><b>action</b> — Адрес (URL) программы или документа, который
+		обрабатывает данные формы.</li>
+		<li><b>method</b> — Метод протокола НTТP:
+			<ul>
+				<li><b>GET</b> — предназначен для получения требуемой информации и
+				передачи данных в адресной строке в виде пары значений «имя
+				(элемента)=значение (элемента)». Пары «имя=значение»
+				присоединяются к адресу страницы сайта после вопросительного
+				знака и разделяются между собой амперсандом.</li>
+				<li><b>POST</b> — посылает на сервер данные в запросе браузера. Это
+				позволяет отправлять существует ограничение на объем
+				передаваемой информации в 4 Кб.</li>
+			</ul>
+		</li>
+		<li>
+			<b>enctype</b> — Способ кодирования данных формы:
+			<ul>
+				<li><b>applicatiоn</b>/<b>x-www-form-urlencoded</b> — Bместо пробелов
+				ставится +, символы вроде русских букв кодируются их
+				шестнадцатеричными значениями (например, %D0%90%D0%BD%D1%8F
+				вместо Аня).</li>
+				<li><b>multipart</b>/<b>form-data</b> — Данные не кодируются. Это значение
+				применяется при отправке файлов.</li>
+				<li><b>text</b>/<b>plain</b> — Пробелы заменяются знаком +, буквы и другие
+				символы не кодируются.</li>
+			</ul>
+		</li>
+		<li><b>target</b> — Имя окна или фрейма, куда обработчик будет загружать
+		возвращаемый результат:
+			<ul>
+				<li><b>_blank</b> — Загружает страницу в новое окно браузера.</li>
+				<li><b>_self</b> — Загружает страницу в текущее окно.</li>
+				<li><b>_parent</b> — Загружает страницу во фрейм-родитель, если
+				фреймов нет, то это значение работает как _sеlf.</li>
+				<li><b>_top</b> — Oтменяет все фреймы и загружает страницу в полном
+				окне браузера, если фреймов нет, то это значение работает
+				как _self.</li>
+			</ul>
+		</li>
+		<li><b>autocomplete</b> — Включает функцию автозаполнения полей формы в
+		браузере. </li>
+		<li><b>novalidate</b> — Отменяет встроенную проверку данных формы на
+		корректность ввода. </li>
+	</ul>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p21.png' %}">
+	<h1 class="h1 text-light">Элементы формы</h1>
+	<h1 class="fu text-light"><b>input</b></h1>
+	<p class=" text-light">Тег input позволяет создавать разные части интерфейса формы и
+	обеспечивать взанмодействие с пользователем. В основном тег input
+	используется для создания текстовых полей, различных кнопок,
+	переключателей и флажков.</p>
+	<h2 class="h2 text-light">Атрибуты тега input</h2>
+	<ul class=" text-light">
+		<li><b>alt</b> — Альтернативный текст для кнопки с изображением.</li>
+		<li><b>autocomplete</b> — Bключает или отключает автозаполнение.</li>
+		<li><b>autofocus</b> — Устанавливает фокус в поле формы.</li>
+		<li><b>checked</b> Предварительно активированный переключатель или флажок.</li>
+		<li><b>max</b> — Верхнее значение для ввода числа или даты. </li>
+		<li><b>maxlength</b> — Максимальное количество символов, разрешённых в
+		тексте.</li>
+		<li><b>min</b> — Нижнее значение для ввода числа или даты.</li>
+		<li><b>minlength</b> — Минимальное количество символов, разрешённых в
+		тексте.</li>
+		<li><b>multiple</b> — Позволяет загрузить несколько файлов одновременно.</li>
+		<li><b>name</b> — Имя поля, предназначено для того, чтобы обработчик формы
+		мог его идентифицировать.</li>
+		<li><b>placeholder</b> — Выводит подсказывающий текст.</li>
+		<li><b>required</b> — Обязательное для заполнения поле.</li>
+		<li><b>size</b> — Ширина текстового поля.</li>
+		<li><b>src</b> — Адрес графического файла для поля с изображением. step —
+		Шаг приращения для числовых полей.</li>
+		<li><b>type</b> — Coобщает браузеру, к какому типу относится элемент формы.</li>
+		<li><b>value</b> — Значение элемента</li>
+		<li><b>step</b> — Шаг приращения для числовых полей.</li>
+	</ul>
+	<h2 class="h2 text-light">Атрибут <b>type</b></h2>
+	<p class=" text-light">Основной атрибут тега <b>input</b>, определяющий внешний вид элемента и
+	его поведение — <b>type</b>. Значения атрибута: </p>
+	<h1 class="fu text-light"><b>button</b></h1>
+	<p class="text-light">Простая кнопка</p>
+	<h1 class="fu text-light"><b>checkbox</b></h1>
+	<p class="text-light">Флажки</p>
+	<h1 class="fu text-light"><b>file</b></h1>
+	<p class="text-light">Поле для загрузки файла</p>
+	<h1 class="fu text-light"><b>image</b></h1>
+	<p class="text-light">Кнопка-картинка для отправки данных форм на сервер</p>
+	<h1 class="fu text-light"><b>password</b></h1>
+	<p class="text-light">Поле для ввода пароля</p>
+	<h1 class="fu text-light"><b>radio</b></h1>
+	<p class="text-light">Переключатели</p>
+	<h1 class="fu text-light"><b>reset</b></h1>
+	<p class="text-light">Кнопка для возвращения данных формы в первоначальное значение</p>
+	<h1 class="fu text-light"><b>submit</b></h1>
+	<p class="text-light">Кнопка для отправки данных формы на сервер</p>
+	<h1 class="fu text-light"><b>text</b></h1>
+	<p class="text-light">Текстовое поле</p>
+	<h1 class="fu text-light"><b>color</b></h1>
+	<p class="text-light">Виджет для выбора цвета</p>
+	<h1 class="fu text-light"><b>date</b></h1>
+	<p class="text-light">Поле для выбора календарной даты</p>
+	<h1 class="fu text-light"><b>datetime-local</b></h1>
+	<p class="text-light">Указание местной даты и времени</p>
+	<h1 class="fu text-light"><b>email</b></h1>
+	<p class="text-light">Поле для адресов электронной почты</p>
+	<h1 class="fu text-light"><b>number</b></h1>
+	<p class="text-light">Поле для ввода чисел</p>
+	<h1 class="fu text-light"><b>range</b></h1>
+	<p class="text-light">Ползунок для выьора чисел в указанном диапозоне(<b>min</b>, <b>max</b>, <b>step</b>)</p>
+	<h1 class="fu text-light"><b>search</b></h1>
+	<p class="text-light">Поле для поиска</p>
+	<h1 class="fu text-light"><b>tel</b></h1>
+	<p class="text-light">Поле для телефонных номеров</p>
+	<h1 class="fu text-light"><b>time</b></h1>
+	<p class="text-light">Поле для времени</p>
+	<h1 class="fu text-light"><b>url</b></h1>
+	<p class="text-light">Поле для веб-адресов</p>
+	<h1 class="fu text-light"><b>month</b></h1>
+	<p class="text-light">Выбор месяца</p>
+	<h1 class="fu text-light"><b>week</b></h1>
+	<p class="text-light">Выбор недели</p>
+	<h2 class="h2 text-light">Список возможных вариантов</h2>
+	<h1 class=" text-light"><b>datalist, list</b></h1>
+	<p class=" text-light">Указывает на список вариантов, которые можно выбирать при наборе
+	текста.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p22.png' %}">
+	<h2 class="h2 text-light">Подпись для элемента формы</h2>
+	<h1 class="fu text-light"><b>label</b></h1>
+	<p class=" text-light">Тeг <b>label</b> связывает в единое целое элемент формы и поясняющий текст к нему.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p23.png' %}">
+	<h2 class="h2 text-light">Кнопка <b>button</b></h2>
+	<p class=" text-light">Элемент <b>button</b> создаёт на веб-странице кнопки и по своему действию напоминает <b>reset</b> результат, получаемый с помощью <b>input</b> (с aтрибутом tyре-"button submit"). В отличие от этого элемента, <b>button</b> предлагает расширенные возможности по созданию кнопок. Например, на подобной кнопке можно размещать любые элементы HTML, в том числе изображения. Используя стили можно определить вид кнопки путём изменения шрифта, цвета фона, размеров и других параметров.</p>
+	<p class=" text-light">Атрибуты:</p>
+	<ul class=" text-light">
+		<li><b>name</b> — определяет уникальное имя кнопки.</li>
+		<li><b>type</b> — устанавливает тип кнопки:
+			<ul>
+				<li><b>button</b> — обычная кнопка.</li>
+				<li><b>reset</b> — кнопка для очистки введённых данных формы и возвращения значений в первоначальное состояние. </li>
+				<li><b>submit</b> — кнoпка для отправки данных формы на сервер. </li>
+				<li><b>menu</b> — открывает меню, созданное с помощью элемента menu.</li>
+			</ul>
+		</li>
+		<li><b>value</b> — 3начение кнопки, которое будет отправлено на сервер или прочитано с помощью скриптов.</li>
+	</ul>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p24.png' %}">
+	<h2 class="h2 text-light">Многострочное текстовое поле</h2>
+	<h1 class="fu text-light"><b>textarea</b></h1>
+	<p class=" text-light">Ter <b>textаrea</b> создает на странице многострочное текстовое поле. За размеры поля отвечают атрибуты <b>соls</b> (количество символов в строке, ширина поля) и <b>rows</b> (количество строк, высота поля).</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p25.png' %}">
+	<h2 class="h2 text-light">Список выбора</h2>
+	<h1 class="fu text-light"><b>select, option</b></h1>
+	<p class=" text-light">Тег <b>select</b> объявляет о создании списка вариантов, а тег <b>орtion</b> формирует пункты списка. В зависимости от атрибутов тега <b>select</b> список может быть выпадающим с возможностью выбрать только один пункт или списком с прокруткой и возможностью выбора нескольких вариантов:</p>
+	<ul class=" text-light">
+		<li><b>multiple</b> — задает множественный выбор.</li>
+		<li><b>size</b> — peryлирует высоту списка с прокруткой.</li>
+	</ul>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p26.png' %}">
+	<h1 class="fu text-light"><b>optgroup, label</b></h1>
+	<p class=" text-light">Тег <b>оptgroup</b> позволяет объединить пункты списка (<b>орtion</b>) <b>select</b> в группы по какому-либо признаку, а атрибут <b>lаbel</b> позволяет дать название такой группе.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p27.png' %}">
+	<h2 class="h2 text-light">Группировка элементов</h2>
+	<h1 class="fu text-light"><b>fieldest, legend</b></h1>
+	<p class=" text-light">Тег <b>fieldset</b> предназначен для создания отдельной группы элементов формы. Группировка элементов позволяет облегчить пользователю работу с большими формами. Тег <b>legend</b> Используется для создания заголовка группы элементов формы, которая определена тегом <b>fieldset</b>.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p28.png' %}">
+	<div class="mt-2"></div>
+	<button onclick="window.location.href = '../№9/';" class="btn no mb-3 px-4" role="button">Дальше</button>
+
+{% endblock %}

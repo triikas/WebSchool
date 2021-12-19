@@ -1,0 +1,54 @@
+{% extends 'lessons/htmlOb/sha-les.html' %}
+{% load static %}
+{% block title %}
+	WebSchool: Разметка страницы
+{% endblock %}
+{% block body1 %}
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№1/';">#1</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№2/';">#2</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№3/';">#3</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№4/';">#4</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk">#6</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№8/';">#8</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№9/';">#9</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№10/';">#10</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№11/';">#11</div>
+
+{% endblock %}
+{% block body2 %}
+	<h1 class="h1 text-light">Разметка страницы</h1>
+	<h2 class="h2 text-light">Разделы страницы</h2>
+	<h1 class="fu text-light"><b>header</b></h1>
+	<p class=" text-light">Тег <b>header</b> предназначен для создания «шапки» страницы сайта в целом или для «шапки» раздела страницы. В <b>header</b>, eсли он выступает в роли шапки страницы, помещают логотип или название сайта, слоган, тематическое изображение, контакты, форму поиска, иконки соц. сетей и т.п. Если же <b>header</b> используется как шапка раздела страницы, в него помешают заголовок раздела.</p>
+	<h1 class="fu text-light"><b>nav</b></h1>
+	<p class=" text-light">Тег <b>nav</b> представляет раздел страницы, содержащий ссылки на другие страницы или на разделы текущей страницы.</p>
+	<p class=" text-light">В тех случаях, когда содержимое элемента <b>nav</b> представляет собой список элементов, используйте списки для разметки навигации. </p>
+	<p class=" text-light">Не все группы ссылок на странице должны быть в элементе <b>nav</b> этот элемент прежде всего предназначен для разделов, состоящих из больших блоков навигации, т.е. для главной навигации по сайту между его основными разделами, но не для второстепенной (не для перемещения между подразделами и страницами большого раздела).</p>
+	<h1 class="fu text-light"><b>main</b></h1>
+	<p class=" text-light">Тег <b>main</b> представляет основное (главное) содержимое страницы сайта.</p>
+	<p class=" text-light">Область основного содержимого документа включает в себя содержимое, которое уникально для этого документа и исключает содержимое, повторяющееся в наборе нескольких документов, такое как шапка сайта, навигация, подвал, боковая колонка и т.п.</p>
+	<p class=" text-light">В документе не может быть более одного элемента <b>main</b>.</p>
+	<p class=" text-light">Нельзя помещать элемент <b>main</b> в элементы <b>article</b>, <b>aside</b>, <b>footer</b>, <b>header</b> или <b>nav</b>.</p>
+	<h1 class="fu text-light"><b>footer</b></h1>
+	<p class=" text-light">Тег <b>footer</b> используют для создания подвала страницы сайта в целом или раздела страницы. Футер обычно содержит следующую информацию о своём разделе: кто написал его, ссылки на документы, авторские права и т. п.</p>
+	<h1 class="fu text-light"><b>aside</b></h1>
+	<p class=" text-light">Тег <b>aside</b> используют для оформления второстепенного содержимого страницы: навигация 2 уровня (локальная навигация или навигация по разделу), ссылки по теме, фильтр товаров и т.п.</p>
+	<p class=" text-light">Чаще всего данный элемент используется для создания боковой колонки или врезки.</p>
+	<p class=" text-light">Не следует использовать элемент <b>aside</b> просто для выделения части информации в основном содержимом. </p>
+	<h1 class="fu text-light"><b>article</b></h1>
+	<p class=" text-light">Тег <b>article</b> представляет полную, или самостоятельную, композицию в документе. Это может быть статья на форуме, в журнале или газете, запись в блоге, отправленный пользователем комментарий, интерактивный виджет или любой другой независимый объект содержимого.</p>
+	<p class=" text-light">Когда элементы <b>article</b> вложены друг в друга, внутренние <b>article</b> представляют статьи, которые в принципе относятся к содержимому внешнего <b>article</b>. Например, статья в блоге на сайте и комментарии к ней: можно представить эти комментарии как элементы <b>article</b>, вложенные в элемент <b>article</b> этой статьи блога.</p>
+	<p class=" text-light">Когда главное содержимое страницы (т. е. исключая подвал, шапку, блок навигации и боковую панель) целиком представляет собой самостоятельную композицию, содержимое следует размечать с использованием тега <b>main</b>.</p>
+	<h1 class="fu text-light"><b>section</b></h1>
+	<p class=" text-light">Тег <b>section</b> представляет раздел документа. Раздел, в данном случае, — это тематическое группирование содержимого. Тема каждого элемента <b>section</b> должна быть указана путём включения заголовков (<b>h1-h6</b>) в <b>section</b>.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p11.png' %}">
+	<h2 class="h2 text-light">Вспомогательные элементы разметки</h2>
+	<h1 class="fu text-light"><b>div</b></h1>
+	<p class=" text-light">Тег <b>div</b> не несет логической нагрузки. Этот тег используется для группировки других элементов html-страницы.</p>
+	<p class=" text-light">Рекомендуется использовать <b>div</b>, когда ни один другой элемент не подходит. </p>
+	<p class=" text-light">Элементы <b>div</b> могут пригодиться для стилистических целей.</p>
+	<button onclick="window.location.href = '../№7/';" class="btn no mb-3 px-4" role="button">Дальше</button>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'lessons/htmlOb/sha-les.html' %}
+{% load static %}
+{% block title %}
+	WebSchool: Списки
+{% endblock %}
+{% block body1 %}
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№1/';">#1</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№2/';">#2</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№3/';">#3</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk">#4</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№8/';">#8</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№9/';">#9</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№10/';">#10</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№11/';">#11</div>
+
+{% endblock %}
+{% block body2 %}
+	<h1 class="h1 text-light">Списки</h1>
+	<h2 class="h2 text-light">Нумерованный (упорядоченный) список</h2>
+	<h1 class="text-light fu"><b>ol, li</b></h1>
+	<p class="text-light">Тег <b>оl</b> формирует на html-странице список пронумерованных пунктов. Каждый пункт списка заключается в тег пункта списка — <b>li</b>.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p1.png' %}">
+	<h2 class="h2 text-light">Маркированный (неупорядоченный) список</h2>
+	<h1 class="fu text-light"><b>ul, li</b></h1>
+	<p class="text-light">Тег <b>ul</b> используют для создания маркированного списка пунктов (точки или другие значки). Каждый пункт списка заключается в тег пункта списка — <b>li</b>.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p2.png' %}">
+	<h2 class="h2 text-light">Многоуровневый список</h2>
+	<p class="text-light">При создании многоуровневого списка используются простые нумерованные и/или маркированные списки. Многоуровневость достигается за счет вложения одного списка в текущий пункт другого списка.</p>
+	<p class="text-light">При создании многоуровневого списка важно помнить, что непосредственно в тегах <b>ol</b> и <b>ul</b> могут располагаться только теги <b>li</b>.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p3.png' %}">
+	<h2 class="h2 text-light">Список определений</h2>
+	<h1 class="text-light fu"><b>dl, dt, dd</b></h1>
+	<p class="text-light">Тег <b>dl</b> используют для создания списка определений для научных, технических и других специальных терминов.</p>
+	<p class="text-light">Внутри тега <b>dl</b> непосредственно располагаются пары тегов <b>dt</b> и <b>dd</b>. В тег <b>dt</b> помещают термин, а в тег <b>dd</b> определение для этого термина.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p4.png' %}">
+	<div class="mt-2"></div>
+	<button onclick="window.location.href = '../№5/';" class="btn no mb-3 px-4" role="button">Дальше</button>
+
+{% endblock %}

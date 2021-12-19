@@ -1,0 +1,86 @@
+{% extends 'lessons/htmlOb/sha-les.html' %}
+{% load static %}
+{% block title %}
+	WebSchool: Блочная модель и единицы измерения
+{% endblock %}
+
+{% block body1 %}
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost io" onclick="window.location.href = '../№1/';">#1</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk io">#2</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost io" onclick="window.location.href = '../№3/';">#3</div>
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№4/';">#4</div>-->
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>-->
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>-->
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>-->
+{% endblock %}
+{% block body2 %}
+<h1 class="h1 text-light">Блочная модель и единицы измерения</h1>
+<h2 class="h2 text-light">Единицы</h2>
+<p class="text-light">Для того, чтобы указать размер или отступ недостаточно числа нужны и единицы измерения, что логично. В CSS существует множество разных единиц, но большинство из них может пригодиться лишь в экстраординарных случаях, здесь же представлены лишь наиболее популярные.</p>
+<ul class="text-light">
+	<li class="mb-1"><b>%</b> — Размер указывается в процентах от размера родительского элемента (того, внутри которого находится текущий элемент). Значения могут быть больше 100, а также десятичными дробями.</li>
+	<li class="mb-1"><b>vh/vw</b> — Размер указывается в процентах от размера области просмотра на экране. Соответственно первый — высота, второй — ширина.</li>
+	<li class="mb-1"><b>еm</b> — Размер шрифта от текущего. Проще говоря, шрифт без стилей имеет размер 1em. Если вы поставите ему размер 2em, он станет в 2 раза больше.</li>
+	<li><b>px</b> — Размер указывается в пикселях. Поскольку пиксель — абсолютная единица, размер не будет зависеть от родительского элемента или размера экрана.</li>
+</ul>
+<p class="text-light">Если значение 0, единицы можно не писать.</p>
+<h2 class="h2 text-light">Блочная модель</h2>
+<p class="text-light">Все элементы HTML делятся на блочные и строчные.</p>
+<p class="text-light">Блочный — прямоугольная область на экране, которой можно задать ширину, высоту и отступы (по умолчанию блок занимает максимальную доступную ширину и минимальную высоту необходимую его наполнению). Несколько блоков располагаются в столбик. (Параграфы и заголовки — это блочные элементы)</p>
+<p class="text-light">Строчный — область, размер которой зависит только от размера наполнения. Таким элементам можно задать только горизонтальные отступы. Несколько строчных элементов располагаются в строчку, один за другим. Такими, например, являются ссылки и картинки.</p>
+<h3 class="h3 text-light">Размеры</h3>
+<h1 class="text-light fu"><b>width</b></h1>
+<p class="text-light">Устанавливает ширину элемента без учёта ширины границ и отступов. Значение auto автоматически установит ширину по наполнению.</p>
+<h1 class="text-light fu"><b>height</b></h1>
+<p class="text-light">Устанавливает высоту элемента без учёта ширины границ и отступов. Значение auto автоматически установит высоту по наполнению.</p>
+<h1 class="text-light fu"><b>max/min</b></h1>
+<p class="text-light">Как для ширины, так и для высоты можно указать два свойства: <b>min-width</b> и <b>max-width</b>. Если ширина элемента не указана жёстко (абсолютными единицами), то она будет меняться в зависимости от размера экрана.  Min-width задаёт минимальную ширину элемента, т.е. пока ширина элемента больше минимальной — она зависит от размера экрана, как только она станет меньше, ширина станет равна минимальной, и на экране появится ползунок. Таким же образом для максимального значения и высоты.</p>
+<h3 class="h3 text-light">Границы</h3>
+<h1 class="text-light fu"><b>border</b></h1>
+<p class="text-light">Позволяет указывать в одном свойстве (в любом порядке) цвет, толщину и стиль границы. Также это всё можно указывать отдельно с помощью: <b>border-color</b>, <b>border-style</b> и <b>border-width</b>.</p>
+<p class="text-light">Стили:</p>
+<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/13.jpg' %}">
+<p class="text-light">К border можно через дефис написать направление, тогда граница будет только с указанной стороны. (<b>top</b> — верх, <b>bottom</b> — низ, <b>right</b> — право, <b>left</b> — лево)</p>
+<h1 class="text-light fu"><b>border-radius</b></h1>
+<p class="text-light">Отдельное свойство, создающее закруглённые углы у границы. В качестве значения указывается длина радиуса.</p>
+<h3 class="h3 text-light">Отступы</h3>
+<h1 class="text-light fu"><b>padding</b></h1>
+<p class="text-light">Устанавливает отступ от границы элемента внутрь. Если указать одно значение, оно будет применено ко всем 4 сторонам, а если указать 4 значения, то можно указать разные. Также, дописав через дефис направление, можно отдельным свойством указать отступ с одной стороны.</p>
+<h1 class="text-light fu"><b>margin</b></h1>
+<p class="text-light">Всё тоже самое, только отступы устанавливаются внешние.</p>
+<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/16.jpg' %}">
+
+<h3 class="h3 text-light">Тень</h3>
+<h1 class="text-light fu"><b>box-shadow</b></h1>
+<p class="text-light">Добавляет элементу тень. </p>
+<p class="text-light">Значения (через пробел):</p>
+<ul class="text-light">
+	<li class="mb-1"><b>none</b> — Убирает тень.</li>
+	<li class="mb-1"><b>insert</b> — Тень выводится внутри элемента.</li>
+	<li class="mb-1">Сдвиг тени по горизонтали относительно элемента.</li>
+	<li class="mb-1">Сдвиг тени по вертикали относительно элемента.</li>
+	<li class="mb-1">Радиус размытия тени (по умолчанию 0).</li>
+	<li>Цвет.</li>
+</ul>
+<h3 class="h3 text-light">Свойство display</h3>
+<h1 class="text-light fu"><b>display</b></h1>
+<p class="text-light">Многоцелевое свойство, которое определяет, как элемент будет отображаться.</p>
+<p class="text-light">Основные значения:</p>
+<ul class="text-light">
+	<li class="mb-1"><b>block</b> — Элемент отображается как блочный.</li>
+	<li class="mb-1"><b>inline</b> — Элемент отображается как строчный.</li>
+	<li class="mb-1"><b>inline-block</b> — Элемент отображается как блочный, но обтекаемый другими элементами как строчный.</li>
+	<li><b>none</b> — Элемент не отображается. Страница формируется так, словно его нет.</li>
+</ul>
+<h3 class="h3 text-light">Обтекание</h3>
+<h1 class="text-light fu"><b>float</b></h1>
+<p class="text-light">Определяет по какой стороне будет выравниваться элемент, при этом остальные элементы будут обтекать его с оставшихся сторон. При значении none, элемент располагается как обычно. (варианты значений: left, right, none)</p>
+<h1 class="text-light fu"><b>clear</b></h1>
+<p class="text-light">Устанавливает с какой стороны элемент нельзя обтекать. Если указано float, то clear отменяет его действие для указанных сторон. (варианты значений: left, right, none, both(обе стороны))</p>
+<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/14.png' %}">
+<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/15.png' %}">
+<p></p>
+
+<button onclick="window.location.href = '../№3/';" class="btn no mb-3 px-4" role="button">Дальше</button>
+
+{% endblock %}

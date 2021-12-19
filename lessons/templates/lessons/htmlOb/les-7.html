@@ -1,0 +1,66 @@
+{% extends 'lessons/htmlOb/sha-les.html' %}
+{% load static %}
+{% block title %}
+	WebSchool: Таблицы
+{% endblock %}
+{% block body1 %}
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№1/';">#1</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№2/';">#2</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№3/';">#3</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№4/';">#4</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk">#7</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№8/';">#8</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№9/';">#9</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№10/';">#10</div>
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№11/';">#11</div>
+
+{% endblock %}
+{% block body2 %}
+	<h1 class="h1 text-light">Таблицы</h1>
+	<h2 class="h2 text-light">Простые таблицы</h2>
+	<h1 class="fu text-light"><b>table, tr, td</b></h1>
+	<p class=" text-light">Тег <b>table</b> объявляет о создании таблицы.</p>
+	<p class=" text-light">Тег <b>tr</b> отвечает за строки таблицы, а тег <b>td</b> — за ячейки в сроках.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p12.png' %}">
+	<p class=" text-light">Количество ячеек в каждой строке таблицы должно быть одинаковым в пределах одной таблицы.</p>
+	<h1 class="fu text-light"><b>th</b></h1>
+	<p class=" text-light">Тег <b>th</b> используется для создания так называемой заголовочной ячейки. Она отличается от обычной ячейки, создаваемой тегом <b>td</b>, форматированием: текст в полужирном начертании с горизонтальным выравниванием по центру ячейки.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p13.png' %}">
+	<h2 class="h2 text-light">Заголовок таблицы</h2>
+	<h1 class="fu text-light"><b>caption</b></h1>
+	<p class=" text-light">Элемент <b>саption</b> предназначен для создания заголовка к таблице и может размещаться только внутри контейнера <b>table</b>, причём сразу после открывающего тега. Такой заголовок представляет собой текст, по умолчанию отображаемый перед таблицей и описывающий её содержание.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p14.png' %}">
+	<h2 class="h2 text-light">Объединение ячеек</h2>
+	<h1 class="fu text-light"><b>rowspan</b></h1>
+	<p class=" text-light">Атрибут <b>rоwspan</b> отвечает за объединение ячеек таблицы по вертикали.</p>
+	<p class=" text-light">В качестве значения этого атрибута указывается целое положительное число больше 1, равное количеству объединяемых ячеек.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p15.png' %}">
+	<h1 class="fu text-light"><b>colspan</b></h1>
+	<p class=" text-light">Атрибут <b>сolspan</b> отвечает за объединение ячеек таблицы по горизонтали. В качестве значения этого атрибута указывается целое положительное число больше 1, равное количеству объединяемых ячеек.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p16.png' %}">
+	<h2 class="h2 text-light">Вложенные таблицы</h2>
+	<p class=" text-light">Одну таблицу допустимо вкладывать в ячейку другой таблицы. Это свойство может пригодиться для создания таблиц сложной конструкции.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p17.png' %}">
+	<h2 class="h2 text-light">Группирвание столбцов таблицы</h2>
+	<h1 class="fu text-light"><b>colgroup</b></h1>
+	<p class=" text-light">Элемент <b>соlgroup</b> coздает структурную группу столбцов, выделяя логически однородные ячейки.</p>
+	<p class=" text-light">Группирует один или более столбцов для единого форматирования, позволяя применить стили к столбцам вместо того, чтобы повторять стили для каждой ячейки и для каждой строки. Добавляется непосредственно после тегов <b>table</b> и <b>саption</b>. </p>
+	<h1 class="fu text-light"><b>col</b></h1>
+	<p class=" text-light">Элемент <b>соl</b> формирует группы столбцов, которые делят таблицу на разделы, не относящиеся к общей структуре, т.е. не содержащие информацию одного типа. </p>
+	<p class=" text-light">Позволяет задавать свойства столбцов для каждого столбца в пределах элемента <b>соlgroup</b>. Для элемента <b>соl</b> доступен атрибут <b>span</b>, задающий количество столбцов для объединения.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p18.png' %}">
+	<h2 class="h2 text-light">Группировка таблицы</h2>
+	<h1 class="fu text-light"><b>thead</b></h1>
+	<p class=" text-light">Элемент <b>thead</b> cоздает группу заголовков для строк таблицы с целью задания единого оформления. Используется в сочетании с элементами <b>tbody</b> и <b>tfoot</b> для указания каждой части таблицы.</p>
+	<p class=" text-light">Элемент должен быть использован в следующем порядке: как дочерний элемент <b>table</b>, после <b>сарtion</b> и <b>соlgroup</b>, и перед <b>tbody</b>, <b>tfoot</b> и <b>tr</b> элементами. В пределах одной таблицы можно использовать один раз.</p>
+	<h1 class="fu text-light"><b>tbody</b></h1>
+	<p class=" text-light">Элемент <b>tbody</b> группирует основное содержимое таблицы. Используется в сочетании с элементами <b>thead</b> и <b>tfoot</b>. </p>
+	<h1 class="fu text-light"><b>tfoot</b></h1>
+	<p class=" text-light">Элемент <b>tfoot</b> cоздает группу строк для представления информации о суммах или итогах, расположенную в нижней части таблицы. Используется в таблице один раз. Располагается после тега thead, перед тегами tbody и tr.</p>
+	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p19.png' %}">
+	<div class="mt-2"></div>
+	<button onclick="window.location.href = '../№8/';" class="btn no mb-3 px-4" role="button">Дальше</button>
+
+{% endblock %}

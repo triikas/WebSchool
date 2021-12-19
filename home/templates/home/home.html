@@ -1,0 +1,94 @@
+﻿{% extends 'home/sha-home.html' %}
+{% load static %}
+{% block title %}
+	WebSchool
+{% endblock %}
+
+{% block body %}
+	<nav class="navbar navbar-dark bg-dark fixed-top border-bottom">
+	  <div class="container-fluid">
+		<a class="navbar-brand" href="#">WebSchool</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsExample01">
+		  <ul class="navbar-nav mr-auto mb-2">
+			<li class="nav-item active">
+			  <a class="nav-link disabled" aria-current="page" href= "#" >Главная</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="lessons/">Курсы</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Личный кабинет</a>
+			</li>
+		  </ul>
+		  <form>
+			<input class="form-control" type="text" placeholder="Поиск" aria-label="Search">
+		  </form>
+		</div>
+	  </div>
+	</nav>
+	<script type="text/javascript"> (function(m,e,t,r,i,k,a){ m[i]=m[i]||function(){ (m[i].a=m[i].a||[]).push(arguments) }; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(67718821, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/67718821" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+
+	<div class="container mt-5">
+		<div class="row obl">
+<!--			<div class="col-md-1"></div>-->
+			<div class="col-md-8">
+				<h1 class="h1 text-light hh1">Web-разработка</h1>
+				<p class="text-light ms-3">Создание профессиональных сайтов</p>
+			</div>
+		</div>
+	</div>
+	<div class="obl ">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<h1 class="н1 text-light">Откуда ноги растут</h1>
+					<p class="text-light">
+						Прежде чем появилась возможность создавать сайты, возник интернет и произошло это событие в 1990 году. Интернет без информации, представлял из себя совершенно бесполезное изобретение и его необходимо было наполнить. Именно этим и решил заняться его создатель <a href="https://ru.wikipedia.org/wiki/Бернерс-Ли,_Тим">Тимоти Бернерс-Ли</a>. Создавая сайт, Ти Бернерс-Ли задумывал его как некую "папку", в которой будут храниться самые основные сетевые документы, а объединять их будет личное доменное имя, оригинальное и единственное в своем роде. По-сути, именно такими сайты являются и на сегодняшний день, как старые, так и новые проекты, просто хранят в себе сгусток информации, различных страниц и документов, которые фактически принадлежат юридическому лицу, при этом находятся в свободном доступе для массы пользователей, а отыскать их можно под определенным доменным именем.
+					</p>
+					<p class="text-light">
+						<b>6 августа 1991 года</b> в интернете появился самый первый во всех смыслах сайт, который располагался по электронному адресу info.cern.ch.
+					</p>
+					<p class="text-light">
+						Внешне первый сайт был невзрачен, что совершенно неудивительно. Он представлял собой сплошную стартовую страницу белого цвета, на которой для посетителей размещалась основная информация о инновационной технологии того времени "World Wide Web". Здесь же, на первом во всем мире сайте, были размещены и подробные инструкции по установке браузеров, а также серверов на свои персональные компьютеры, то есть технологию "WWW", можно смело назвать началом современного интернет-пространства, во всех его проявлениях.
+					</p>
+					<p class="text-light">
+						Первый русскоязычный сайт появился в интернете только в 1995 году, а вот более-менее активное развитие интернета в нашей стране началось только ближе к концу 90-х.
+					</p>
+				</div>
+				<div class="col-md-3 pt-5">
+					<img class="img-fluid img-thumbnail my-auto" src="{% static 'home/tim.jpg' %}">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="obl f pt-1">
+		<div class="container">
+		<h1 class="н1 text-light mt-5 mw-50">Как это работает</h1>
+		</div>
+<!--		<div class="h pt-1 py-5 d-flex justify-content-center"><img class="img-fluid kk" src="{% static 'home/shema2.png' %}"></div>-->
+		<img class="img-fluid mx-auto d-block h-75" src="{% static 'home/shema2.png' %}">
+
+	</div>
+	<div class="obl ">
+		<div class="container">
+			<h1 class="н1 text-light mt-5 ">Frontend-разработка</h1>
+			<p class="text-light mt-4">Это разработка пользовательского интерфейса и функций, которые работают на клиентской стороне веб-сайта или приложения. Это всё, что видит пользователь, открывая веб-страницу, и с чем он взаимодействует.</p>
+			<p class="text-light">Чтобы лучше понять, откройте страницу любого сайта — перед собой вы увидите интерфейс. Нажав Ctrl+Shift+I, вы откроете код страницы. Он описывает цвета, вёрстку, шрифты, расположение графических элементов и так далее.</p>
+			<p class="text-light mb-4">Именно этому вы сможете научиться здесь.</p>
+			<img class="img-fluid mx-auto d-block" src="{% static 'home/logos.png' %}">
+		</div>
+	</div>
+	<footer class="py-5 bg-dark">
+		<ul class="nav justify-content-center border-bottom pb-3 mb-3 mx-4">
+			<li class="nav-item"><a href="javascript:scroll(0,0)" class="nav-link px-2 text-muted">Наверх</a></li>
+		</ul>
+		<p class="text-center text-muted">© 2021 Кислицин К. Р.</p>
+    </footer>
+<!--	<p>вводная информация</p>-->
+{% endblock %}
