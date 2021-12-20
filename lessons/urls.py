@@ -1,6 +1,6 @@
 from django.urls import path, include
 from . import views
-from django.views.generic import RedirectView
+# app_name = 'lessons'
 urlpatterns = [
     path('', views.lessons, name='lessons'),
     path('HTML/', views.htmlOb, name='html'),
@@ -33,5 +33,4 @@ urlpatterns = [
     path('CSS-1/test2/', views.test22),
     path('CSS-1/test3/', views.test33),
     path('CSS-1/practice/', views.praCS),
-    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/lessons/unnamed.png'), name='favicon'),
 ]
