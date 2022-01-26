@@ -6,12 +6,29 @@
 	background-color:#E9E9EA;
 	color:#302B3D;
 }
+.back{
+	text-decoration:none;
+	color:#9B9D9E;
+	margin-right:5px;
+	margin-left:5px;
+}
+span{
+	color:#9B9D9E;
+	margin-left:5px;
+}
+.back:hover{
+	color:#F8F9FA;
+}
+.back-1{
+	color:#9B9D9E;
+}
 .kol{
 	background-color:aliceblue;
 	height:99%;
 	width:1px;
 	float:left;
 	margin-left:10px;
+	
 }
 .nach{
 	height:85vh;
@@ -30,6 +47,9 @@
 }
 .no{
 	background-color:#8E377E;
+}
+.no:hover{
+	background-color:#7C306F;
 }
 .jjk-ost{
 	cursor:pointer;

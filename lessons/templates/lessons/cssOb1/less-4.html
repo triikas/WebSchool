@@ -1,7 +1,7 @@
 {% extends 'lessons/htmlOb/sha-les.html' %}
 {% load static %}
 {% block title %}
-	WebSchool: ХЗ что
+	WebSchool: Типографика
 {% endblock %}
 
 {% block body1 %}
@@ -9,11 +9,53 @@
 	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№2/';">#2</div>
 	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№3/';">#3</div>
 	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk">#4</div>
-	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>
-	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>
-	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>-->
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>-->
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>-->
 {% endblock %}
 
 {% block body2 %}
-
+<h1 class="h1 text-light">Типографика</h1>
+<h2 class="h2 text-light">Шрифт</h2>
+<p class="text-light">Использование на сайте нестандартных шрифтов не только сильно улучшает внешний вид, но и является признаком профессионализма. Однако, прежде чем мы перейдём к этому нужно научиться, как использовать стандартные.</p>
+<h1 class="text-light fu"><b>font-family</b></h1>
+<p class="text-light">Это свойство позволяет указывать желаемый шрифт по названию или типу. Если вы работаете в редакторе, то обычно их можно выбрать в выпадающем списке.</p>
+<ul class="text-light">
+	<li style="font-family:serif;font-size:18px;"><b>serif</b> — с засечками</li>
+	<li style="font-family:sans-serif;"><b>sans-serif</b> — без засечек</li>
+	<li style="font-family:monospase;font-size:18px;"><b>monospase</b> — моноширинный</li>
+</ul>
+<p class="text-light">В качестве значения нередко задают список шрифтов, начиная с самого редкого. Браузер идёт по списку с лева на право и использует первый найденный.</p>
+<h1 class="text-light fu"><b>@font-face</b></h1>
+<p class="text-light">Эта конструкция позволяет подгружать свой шрифт, имеющийся у вас в виде файла. В результате его можно будет указать через <b>font-family</b>.</p>
+<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/16.png' %}">
+<p class="text-light">Если вы не хотите скачивать шрифт, вы можете использовать ссылку на него в соответствующем сервисе. Таким сервисом является например <b>Google Fonts</b>. Скопированный код достаточно вставить в <b>head</b>, применится он автоматически.</p>
+<h2 class="h2 text-light">Свойства</h2>
+<h1 class="text-light fu"><b>color</b></h1>
+<p class="text-light">Устанавливает цвет шрифта.</p>
+<h1 class="text-light fu"><b>font-size</b></h1>
+<p class="text-light">Устанавливает размер шрифта.</p>
+<h1 class="text-light fu"><b>text-align</b></h1>
+<p class="text-light">Выравнивание текста по горизонтали (<b>left</b>/<b>right</b>/<b>center</b>).</p>
+<h1 class="text-light fu"><b>text-decoration</b></h1>
+<p class="text-light">Дополнительное оформление текста.</p>
+<ul class="text-light">
+	<li style="text-decoration:underline;"><b>underline</b></li>
+	<li style="text-decoration:line-through;"><b>line-through</b></li>
+	<li style="text-decoration:overline;"><b>overline</b></li>
+	<li><b>none</b> — убирает дополнительное оформление</li>
+</ul>
+<h1 class="text-light fu"><b>text-shadow</b></h1>
+<p class="text-light">Добавляет тексту тень. Параметры указываются через пробел в порядке: сдвиг по x, сдвиг по y, радиус размытия, цвет.</p>
+<h1 class="text-light fu"><b>text-transform</b></h1>
+<p class="text-light">Управляет регистром.</p>
+<ul class="text-light">
+	<li style="text-transform:lowercase;"><b>lowercase</b></li>
+	<li style="text-transform:uppercase;"><b>uppercase</b></li>
+	<li style="text-transform:capitalize;"><b>capitalize</b></li>
+	<li><b>none</b> — убирает дополнительное оформление</li>
+</ul>
+<h1 class="text-light fu"><b>line-height</b></h1>
+<p class="text-light">Указывает высоту строки.</p>
+<button onclick="window.location.href = '../';" class="btn no mb-3 px-4" role="button">Завершить</button>
 {% endblock %}

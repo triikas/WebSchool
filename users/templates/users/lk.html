@@ -1,0 +1,75 @@
+{% extends 'users/sha-users.html' %}
+{% load static %}
+{% block title %}
+	Личный кабинет
+{% endblock %}
+
+{% block body %}
+	<style>
+		.nach{
+			margin-top:13vh;
+		}
+		.nachh{
+			margin-top:40vh;
+		}
+		.btn{
+			display:block;
+		}
+		.h1{
+			font-size:65px;
+		}
+	</style>
+	<nav class="navbar navbar-dark bg-dark fixed-top border-bottom">
+	  <div class="container-fluid">
+		<a class="navbar-brand" href="#">WebSchool</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsExample01">
+		  <ul class="navbar-nav mr-auto mb-2">
+			<li class="nav-item active">
+			  <a class="nav-link" aria-current="page" href= "../../" >Главная</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="../../lessons/">Курсы</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Личный кабинет</a>
+			</li>
+		  </ul>
+		  <form>
+			<input class="form-control" type="text" placeholder="Поиск" aria-label="Search">
+		  </form>
+		</div>
+	  </div>
+	</nav>
+	<script type="text/javascript"> (function(m,e,t,r,i,k,a){ m[i]=m[i]||function(){ (m[i].a=m[i].a||[]).push(arguments) }; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(67718821, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/67718821" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+	{% if not user.is_authenticated %}
+	<div class="nachh text-light text-center">
+	<h1 class="h1 mb-2">Вы не вошли в аккаунт</h1>
+
+	<button onclick="window.location.href = '../registration';" class="btn mx-auto mb-2 px-4 no" role="button">Зарегистрироваться</button>
+	<button onclick="window.location.href = '../authorization';" class="btn mx-auto text-dark btn-success mb-3 px-4" role="button">Войти</button>
+	</div>
+	{% else %}
+	<div class="nach text-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img class="img-fluid w-75 igm my-2" src="{% static 'users/user.png' %}">
+				</div>
+				<div class="col-md-9">
+					<h1 class="h1 mt-4">{{ user.username }}</h1>
+					<p>{{ user.email }}</p>
+					<button onclick="window.location.href = '../out';" class="btn text-dark no mb-3 px-4" role="button">Выйти</button>
+
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	{% endif %}
+{% endblock %}

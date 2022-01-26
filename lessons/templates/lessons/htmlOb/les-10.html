@@ -18,6 +18,9 @@
 
 {% endblock %}
 {% block body2 %}
+<p class="back-1">
+		<a class="back" href="../../../">WebSchool</a> > <a class="back" href="../../">Курсы</a> > <a class="back" href="../">HTML</a> > <span>Аудио и видео</span>
+	</p>
 	<h1 class="h1 text-light">Аудио и видео</h1>
 	<h2 class="h2 text-light">Аудио на странице</h2>
 	<h1 class="fu text-light"><b>audio, source</b></h1>
@@ -31,50 +34,53 @@
 		<li><b>muted</b> — Oтключает звук при воспроизведении музыки.</li>
 		<li><b>SEC</b> — Указывает путь к воспроизводимому файлу.</li>
 	</ul>
-	<h2 class="h2 text-light">Кодеки и браузеры</h2>
-	<table class="table text-light">
-		<tr>
-			<td>Кодек</td>
-			<td>IE</td>
-			<td>Chrome</td>
-			<td>Opera</td>
-			<td>Safari</td>
-			<td>Firefox</td>
-		</tr>
-		<tr>
-			<td>ogg/vorbis</td>
-			<td>нет</td>
-			<td>3</td>
-			<td>10.50</td>
-			<td>нет</td>
-			<td>3.5</td>
-		</tr>
-		<tr>
-			<td>wav</td>
-			<td>нет</td>
-			<td>3</td>
-			<td>10.60</td>
-			<td>3.1</td>
-			<td>3.5</td>
-		</tr>
-		<tr>
-			<td>mp3</td>
-			<td>9</td>
-			<td>3</td>
-			<td>15</td>
-			<td>3.1</td>
-			<td>22</td>
-		</tr>
-		<tr>
-			<td>AAC</td>
-			<td>9</td>
-			<td>3</td>
-			<td>15</td>
-			<td>3.1</td>
-			<td>22</td>
-		</tr>
-	</table>
-	<p class=" text-light">Для универсального воспроизведения в указанных браузерах аудио кодируют с помощью разных кодеков и добавляют файлы одновременно через элемент <b>source</b>.</p>
+	<audio controls>
+		<source src="{% static 'lessons/1/song.mp3' %}" type="audio/mpeg">
+	</audio>
+<!--	<h2 class="h2 text-light">Кодеки и браузеры</h2>-->
+<!--	<table class="table text-light">-->
+<!--		<tr>-->
+<!--			<td>Кодек</td>-->
+<!--			<td>IE</td>-->
+<!--			<td>Chrome</td>-->
+<!--			<td>Opera</td>-->
+<!--			<td>Safari</td>-->
+<!--			<td>Firefox</td>-->
+<!--		</tr>-->
+<!--		<tr>-->
+<!--			<td>ogg/vorbis</td>-->
+<!--			<td>нет</td>-->
+<!--			<td>3</td>-->
+<!--			<td>10.50</td>-->
+<!--			<td>нет</td>-->
+<!--			<td>3.5</td>-->
+<!--		</tr>-->
+<!--		<tr>-->
+<!--			<td>wav</td>-->
+<!--			<td>нет</td>-->
+<!--			<td>3</td>-->
+<!--			<td>10.60</td>-->
+<!--			<td>3.1</td>-->
+<!--			<td>3.5</td>-->
+<!--		</tr>-->
+<!--		<tr>-->
+<!--			<td>mp3</td>-->
+<!--			<td>9</td>-->
+<!--			<td>3</td>-->
+<!--			<td>15</td>-->
+<!--			<td>3.1</td>-->
+<!--			<td>22</td>-->
+<!--		</tr>-->
+<!--		<tr>-->
+<!--			<td>AAC</td>-->
+<!--			<td>9</td>-->
+<!--			<td>3</td>-->
+<!--			<td>15</td>-->
+<!--			<td>3.1</td>-->
+<!--			<td>22</td>-->
+<!--		</tr>-->
+<!--	</table>-->
+<!--	<p class=" text-light">Для универсального воспроизведения в указанных браузерах аудио кодируют с помощью разных кодеков и добавляют файлы одновременно через элемент <b>source</b>.</p>-->
 	<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/p30.png' %}">
 	<h2 class="h2 text-light">Видео на странице</h2>
 	<h1 class="fu text-light"><b>video, source</b></h1>
@@ -91,42 +97,44 @@
 		<li><b>src</b> — указывает путь к воспроизводимому видеоролику.</li>
 		<li><b>width</b> — задаёт ширину области для воспроизведения видеоролика.</li>
 	</ul>
-	<h2 class="h2 text-light">Кодеки и браузеры</h2>
-	<table class="table text-light">
-		<tr>
-			<td>Браузер</td>
-			<td>IE</td>
-			<td>Chrome</td>
-			<td>Opera</td>
-			<td>Safari</td>
-			<td>Firefox</td>
-		</tr>
-		<tr>
-			<td>ogg/theora</td>
-			<td>нет</td>
-			<td>4</td>
-			<td>11.5</td>
-			<td>нет</td>
-			<td>3.5</td>
-		</tr>
-		<tr>
-			<td>H.264</td>
-			<td>9</td>
-			<td>4</td>
-			<td>25</td>
-			<td>3.2</td>
-			<td>21</td>
-		</tr>
-		<tr>
-			<td>WebM</td>
-			<td>нет</td>
-			<td>6</td>
-			<td>11.5</td>
-			<td>нет</td>
-			<td>4</td>
-		</tr>
-	</table>
-	<p class=" text-light">Для универсального воспроизведения в указанных браузерах видео кодируют с помощью разных кодеков и добавляют файлы одновременно.</p>
+<!--	<video controls src="https://vk.com/video_ext.php?oid=11428396&id=159682068&hash=5a851bb5cd4580c5"></video>-->
+	<iframe src="https://vk.com/video_ext.php?oid=11428396&id=159682068&hash=5a851bb5cd4580c5" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+<!--	<h2 class="h2 text-light">Кодеки и браузеры</h2>-->
+<!--	<table class="table text-light">-->
+<!--		<tr>-->
+<!--			<td>Браузер</td>-->
+<!--			<td>IE</td>-->
+<!--			<td>Chrome</td>-->
+<!--			<td>Opera</td>-->
+<!--			<td>Safari</td>-->
+<!--			<td>Firefox</td>-->
+<!--		</tr>-->
+<!--		<tr>-->
+<!--			<td>ogg/theora</td>-->
+<!--			<td>нет</td>-->
+<!--			<td>4</td>-->
+<!--			<td>11.5</td>-->
+<!--			<td>нет</td>-->
+<!--			<td>3.5</td>-->
+<!--		</tr>-->
+<!--		<tr>-->
+<!--			<td>H.264</td>-->
+<!--			<td>9</td>-->
+<!--			<td>4</td>-->
+<!--			<td>25</td>-->
+<!--			<td>3.2</td>-->
+<!--			<td>21</td>-->
+<!--		</tr>-->
+<!--		<tr>-->
+<!--			<td>WebM</td>-->
+<!--			<td>нет</td>-->
+<!--			<td>6</td>-->
+<!--			<td>11.5</td>-->
+<!--			<td>нет</td>-->
+<!--			<td>4</td>-->
+<!--		</tr>-->
+<!--	</table>-->
+<!--	<p class=" text-light">Для универсального воспроизведения в указанных браузерах видео кодируют с помощью разных кодеков и добавляют файлы одновременно.</p>-->
 	<button onclick="window.location.href = '../№11/';" class="btn no mb-3 px-4" role="button">Дальше</button>
 
 

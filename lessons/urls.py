@@ -22,6 +22,7 @@ urlpatterns = [
     path('HTML/test2/', views.test2, name='test2'),
     path('HTML/test3/', views.test3, name='test3'),
     path('HTML/practice/', views.pra, name='pra'),
+    path('HTML/practice/example/', views.ex, name='ex'),
     path('CSS-1/№1/', views.less1),
     path('CSS-1/№2/', views.less2),
     path('CSS-1/№3/', views.less3),
@@ -33,4 +34,5 @@ urlpatterns = [
     path('CSS-1/test2/', views.test22),
     path('CSS-1/test3/', views.test33),
     path('CSS-1/practice/', views.praCS),
+    path('CSS-1/practice/example/', views.exs),
 ]

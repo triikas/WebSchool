@@ -1,9 +1,37 @@
-{% extends 'lessons/sha-lessons.html' %}
+{% extends 'lessons/htmlOb/sha-les.html' %}
 
 {% block title %}
 	WebSchool: Практика
 {% endblock %}
 
-{% block body %}
+{% block body3 %}
+<style>
+	.nach{
+	height:85vh;
+	padding-top:7%;
+	display:block;
 
+}
+	.lo{
+	width:85vw;
+	p{
+	margin-left:4px;
+	}
+	}
+	a{
+	text-decoration:none;
+	}
+</style>
+<div class="nach text-light">
+<p class="back-1">
+		<a class="back" href="../../../">WebSchool</a> > <a class="back" href="../../">Курсы</a> > <a class="back" href="../">HTML</a> > <span>Практика</span>
+</p>
+<div class="mx-auto mt-5 lo px-3 py-5 rounded shadow text-light">
+	<h1 class="h1">Практика</h1>
+	<p>Здесь мы предлагаем вам проверить ваши новоприобретённые знания на практике. Ваша задача: создать html-страницу максимально схожую с <a href="example/">примером</a>.</p>
+	<p>Текст на странице сгенерирован. Вы можете использовать любой другой текст, но для удобства сравнения рекомендуем скопировать текст из примера. Изображение также можно сохранить.</p>
+	<p>Для проверки воспользуйтесь панелью разработчика (Ctrl+Shift+I). Помните, что смотреть код примера сразу будет бессмысленно.</p>
+	<p>Желаем успехов!</p>
+</div>
+</div>
 {% endblock %}

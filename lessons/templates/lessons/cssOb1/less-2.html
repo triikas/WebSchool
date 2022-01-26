@@ -5,15 +5,19 @@
 {% endblock %}
 
 {% block body1 %}
+
 	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost io" onclick="window.location.href = '../№1/';">#1</div>
 	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow jjk io">#2</div>
 	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost io" onclick="window.location.href = '../№3/';">#3</div>
-<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№4/';">#4</div>-->
-<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№5/';">#5</div>-->
+	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№4/';">#4</div>
+<!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.locatio2n.href = '../№5/';">#5</div>-->
 <!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№6/';">#6</div>-->
 <!--	<div class="mx-auto mb-3 text-center px-1 py-5 rounded shadow text-light jjk-ost" onclick="window.location.href = '../№7/';">#7</div>-->
 {% endblock %}
 {% block body2 %}
+<p class="back-1">
+		<a class="back" href="../../../">WebSchool</a> > <a class="back" href="../../">Курсы</a> > <a class="back" href="../">CSS: основы</a> > <span>Блочная модель и единицы измерения</span>
+	</p>
 <h1 class="h1 text-light">Блочная модель и единицы измерения</h1>
 <h2 class="h2 text-light">Единицы</h2>
 <p class="text-light">Для того, чтобы указать размер или отступ недостаточно числа нужны и единицы измерения, что логично. В CSS существует множество разных единиц, но большинство из них может пригодиться лишь в экстраординарных случаях, здесь же представлены лишь наиболее популярные.</p>
@@ -45,7 +49,7 @@
 <p class="text-light">Отдельное свойство, создающее закруглённые углы у границы. В качестве значения указывается длина радиуса.</p>
 <h3 class="h3 text-light">Отступы</h3>
 <h1 class="text-light fu"><b>padding</b></h1>
-<p class="text-light">Устанавливает отступ от границы элемента внутрь. Если указать одно значение, оно будет применено ко всем 4 сторонам, а если указать 4 значения, то можно указать разные. Также, дописав через дефис направление, можно отдельным свойством указать отступ с одной стороны.</p>
+<p class="text-light">Устанавливает отступ от границы элемента внутрь. Если указать одно значение, оно будет применено ко всем 4 сторонам, а если указать 4 значения, то можно указать разные. Также, дописав через дефис направление, можно отдельным свойством указать отступ с одной стороны. (<b>top</b> — верх, <b>bottom</b> — низ, <b>right</b> — право, <b>left</b> — лево)</p>
 <h1 class="text-light fu"><b>margin</b></h1>
 <p class="text-light">Всё тоже самое, только отступы устанавливаются внешние.</p>
 <img class="img-fluid w-75 igm my-2" src="{% static 'lessons/2/16.jpg' %}">

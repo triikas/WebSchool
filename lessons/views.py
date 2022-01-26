@@ -47,7 +47,8 @@ def test3(request):
     return render(request, 'lessons/htmlOb/test-3.html')
 def pra(request):
     return render(request, 'lessons/htmlOb/practice.html')
-
+def ex(request):
+    return render(request, 'lessons/htmlOb/not-sha-practice.html')
 
 def less1(request):
     return render(request, 'lessons/cssOb1/less-1.html')
@@ -71,3 +72,5 @@ def test33(request):
     return render(request, 'lessons/cssOb1/test-3.html')
 def praCS(request):
     return render(request, 'lessons/cssOb1/practice.html')
+def exs(request):
+    return render(request, 'lessons/cssOb1/not-sha-practice.html')

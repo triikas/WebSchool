@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="icon" href="{% static 'lessons/unnamed.png' %}">
+</head>
+<body>
+<nav>
+	<h1>Новый сайт</h1>
+
+</nav>
+<hr>
+<table>
+	<tr>
+		<td>
+			<h3>Статья 1</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</td>
+		<td>
+			<h3>Статья 2</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</td>
+		<td>
+			<h3>Статья 3</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</td>
+	</tr>
+</table>
+<main>
+	<h2>Важный список</h2>
+	<ol>
+		<li>
+			minim distinguantur quamquam elit offendit
+		</li>
+		<li>
+			litteris est mandaremus
+		</li>
+		<li>
+			laborum quorum quae admodum aute
+		</li>
+	</ol>
+	<p>quid nulla sint aliqua <b>nulla</b> anim tamen summis fugiat ipsum labore eram nisi
+		nulla elit aliqua dolore elit amet multos</p>
+	<h2>Важная картинка</h2>
+	<div>
+		<img class="img-fluid w-75 igm my-2" src="{% static 'lessons/1/photo.jpg' %}">
+	</div>
+	<form>
+		<label>Имя пользователя</label>
+		<p><input type="text"></p>
+		<label>Почта</label>
+		<p><input type="email"></p>
+		<label>Пароль</label>
+		<p><input type="password"></p>
+		<p><input type="checkbox"><label>Согласие на рассылку рекламы</label></p>
+
+		<button role="button">Зарегистрироваться</button>
+
+	</form>
+</main>
+<hr>
+<footer>
+	Полезная <a href="https://ru.wikipedia.org/wiki/Заглавная_страница">ссылка</a> на википедию.
+</footer>
+</body>
+</html>

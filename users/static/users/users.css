@@ -9,8 +9,14 @@
 .no{
 	background-color:#8E377E;
 }
+.no:hover{
+	background-color:#7C306F;
+}
 .obl{
 	height: 93vh;
+}
+.otst{
+	margin-top:20vh;
 }
 .hh1{
 
