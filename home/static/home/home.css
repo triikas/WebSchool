@@ -5,8 +5,11 @@
     background-repeat:no-repeat;
     background-size:100%;
 }
+.obll{
+	height: 100vh;
+}
 .obl{
-	height: 93vh;
+	height: 700px;
 }
 .hh1{
 
@@ -32,6 +35,10 @@ a:hover{
 		height:auto;
 		padding-bottom:40px;
 	}
+	.obll{
+		height:auto;
+		padding-bottom:40px;
+	}v
 	.hh{
 	margin-top:10px;
 }

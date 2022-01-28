@@ -37,3 +37,11 @@ b{
 	margin-top:30px;
 }
 }
+@media (max-height: 800px){
+	.lop{
+		margin-top:15%;
+	}
+	footer{
+	margin-top:30px;
+}
+}
